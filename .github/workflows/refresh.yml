@@ -31,3 +31,7 @@ jobs:
           git add public
           git commit -m "chore: refresh VLESS subscription"
           git push
+      - name: Purge jsDelivr cache
+        run: |
+          curl --fail --silent --show-error \
+            "https://purge.jsdelivr.net/gh/dfantomasd/MyVPN-subscription@main/public/subscription.txt"
