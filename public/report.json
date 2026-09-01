@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-01T19:01:54.418212+00:00",
+  "generated_at": "2026-09-01T19:13:19.671976+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -10,6 +10,10 @@
     "lte_status": "unverified_until_user_feedback"
   },
   "sources": {
+    "aetris_mobile_whitelist": {
+      "fetched": 132,
+      "accepted": 67
+    },
     "igareck_mobile_whitelist": {
       "fetched": 26,
       "accepted": 26
@@ -31,14 +35,68 @@
       "accepted": 119
     },
     "aviamasters_ru": {
-      "fetched": 32,
-      "accepted": 30
+      "fetched": 26,
+      "accepted": 26
     }
   },
-  "excluded_ru": 100,
-  "candidates": 134,
-  "published": 6,
+  "excluded_ru": 134,
+  "candidates": 162,
+  "published": 7,
   "nodes": [
+    {
+      "source": "aetris_mobile_whitelist",
+      "node_id": "52946868bf43",
+      "host": "88.216.190.206",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇱🇹 AetrisVPN",
+      "country": "DE",
+      "tcp_ms": 137.5,
+      "proxy_ms": null,
+      "speed_mbps": 4.86,
+      "live_ms": 655.6,
+      "telegram_verified": true,
+      "score": 97.31,
+      "errors": [],
+      "display_name": "🇩🇪 DE · #01 · 656ms · 5Mbps · Reality · RU-LTE·Aetris"
+    },
+    {
+      "source": "aetris_mobile_whitelist",
+      "node_id": "9f89c68c9d20",
+      "host": "88.216.214.143",
+      "port": 40443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇸🇪 AetrisVPN",
+      "country": "SE",
+      "tcp_ms": 166.0,
+      "proxy_ms": null,
+      "speed_mbps": 4.11,
+      "live_ms": 863.5,
+      "telegram_verified": true,
+      "score": 94.34,
+      "errors": [],
+      "display_name": "🇸🇪 SE · #02 · 864ms · 4Mbps · Reality · RU-LTE·Aetris"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "f38643e15331",
+      "host": "31.77.220.183",
+      "port": 1443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇫🇮 Finland, Helsinki | [BL]",
+      "country": "DE",
+      "tcp_ms": 157.4,
+      "proxy_ms": null,
+      "speed_mbps": 1.21,
+      "live_ms": 755.3,
+      "telegram_verified": true,
+      "score": 90.57,
+      "errors": [],
+      "display_name": "🇩🇪 DE · #03 · 755ms · 1Mbps · Reality · RU-Mobile·Regular"
+    },
     {
       "source": "igareck_mobile_regular",
       "node_id": "af8c9187701e",
@@ -48,104 +106,68 @@
       "transport": "tcp",
       "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "country": "NL",
-      "tcp_ms": 339.8,
+      "tcp_ms": 155.3,
       "proxy_ms": null,
-      "speed_mbps": 4.16,
-      "live_ms": 850.1,
+      "speed_mbps": 2.24,
+      "live_ms": 919.0,
       "telegram_verified": true,
-      "score": 90.53,
+      "score": 88.94,
       "errors": [],
-      "display_name": "🇳🇱 NL · #01 · 850ms · 4Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "dce6cb36c64f",
-      "host": "31.77.220.183",
-      "port": 1443,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇫🇮 Finland, Helsinki | [BL]",
-      "country": "DE",
-      "tcp_ms": 153.9,
-      "proxy_ms": null,
-      "speed_mbps": 2.1,
-      "live_ms": 1117.7,
-      "telegram_verified": true,
-      "score": 86.23,
-      "errors": [],
-      "display_name": "🇩🇪 DE · #02 · 1118ms · 2Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇳🇱 NL · #04 · 919ms · 2Mbps · Reality · RU-Mobile·Regular"
     },
     {
       "source": "igareck_sni_whitelist",
-      "node_id": "bf6c035f7798",
+      "node_id": "383dd7ac115d",
       "host": "185.236.22.35",
       "port": 443,
       "security": "reality",
       "transport": "tcp",
       "original_name": "🇱🇻 Latvia | [SNI-RU] vk.com",
       "country": "LV",
-      "tcp_ms": 170.4,
+      "tcp_ms": 160.6,
       "proxy_ms": null,
-      "speed_mbps": 1.15,
-      "live_ms": 1526.5,
+      "speed_mbps": 1.05,
+      "live_ms": 1547.8,
       "telegram_verified": true,
-      "score": 82.75,
+      "score": 82.4,
       "errors": [],
-      "display_name": "🇱🇻 LV · #03 · 1526ms · 1Mbps · Reality · RU-LTE·SNI"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "2aafd949f9b2",
-      "host": "wsnl4.wba-pn.ru",
-      "port": 443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
-      "country": "NL",
-      "tcp_ms": 393.6,
-      "proxy_ms": null,
-      "speed_mbps": 0.14,
-      "live_ms": 1408.0,
-      "telegram_verified": true,
-      "score": 75.92,
-      "errors": [],
-      "display_name": "🇳🇱 NL · #04 · 1408ms · 0Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇱🇻 LV · #05 · 1548ms · 1Mbps · Reality · RU-LTE·SNI"
     },
     {
       "source": "igareck_sni_whitelist",
-      "node_id": "0fd4299c76ad",
+      "node_id": "5fca5dde72e2",
       "host": "185.141.227.150",
       "port": 9001,
       "security": "reality",
       "transport": "grpc",
       "original_name": "🇷🇺 Russia | [SNI-RU] api-maps.yandex.ru",
       "country": "PL",
-      "tcp_ms": 166.3,
+      "tcp_ms": 265.9,
       "proxy_ms": null,
-      "speed_mbps": 0.46,
-      "live_ms": 6890.9,
+      "speed_mbps": 1.52,
+      "live_ms": 2048.2,
       "telegram_verified": true,
-      "score": 62.55,
+      "score": 76.02,
       "errors": [],
-      "display_name": "🇵🇱 PL · #05 · 6891ms · 0Mbps · Reality · RU-LTE·SNI"
+      "display_name": "🇵🇱 PL · #06 · 2048ms · 2Mbps · Reality · RU-LTE·SNI"
     },
     {
       "source": "igareck_mobile_regular",
-      "node_id": "0448a51965df",
-      "host": "2.27.205.136",
-      "port": 8443,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇺🇸 United States, Newark | [BL]",
-      "country": "DE",
-      "tcp_ms": 129.3,
+      "node_id": "8c6224cb6674",
+      "host": "wsnl4.wba-pn.ru",
+      "port": 443,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "country": "NL",
+      "tcp_ms": 189.7,
       "proxy_ms": null,
-      "speed_mbps": 0.22,
-      "live_ms": 7871.7,
+      "speed_mbps": 2.23,
+      "live_ms": 2482.8,
       "telegram_verified": true,
-      "score": 59.79,
+      "score": 63.09,
       "errors": [],
-      "display_name": "🇩🇪 DE · #06 · 7872ms · 0Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇳🇱 NL · #07 · 2483ms · 2Mbps · TLS · RU-Mobile·Regular"
     }
   ]
 }
