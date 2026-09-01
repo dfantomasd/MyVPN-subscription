@@ -1,0 +1,33 @@
+name: Refresh VLESS subscription
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17,47 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Fetch, rank and publish
+        run: python community.py --output public --limit-per-source 200 --max-output 30
+      - name: Commit changed publication
+        run: |
+          if [ -z "$(git status --porcelain -- public)" ]; then exit 0; fi
+          git config user.name "myvpn-bot"
+          git config user.email "myvpn-bot@users.noreply.github.com"
+          git add public
+          git commit -m "chore: refresh VLESS subscription"
+          git push
