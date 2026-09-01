@@ -117,6 +117,7 @@ class Node:
     speed_mbps: float | None = None
     live_ms: float | None = None
     telegram_verified: bool = False
+    services_verified: list[str] = field(default_factory=list)
     score: float = 0
     errors: list[str] = field(default_factory=list)
 
@@ -332,18 +333,38 @@ async def live_probe(node: Node, index: int, semaphore: asyncio.Semaphore) -> No
             if process.returncode is not None:
                 node.errors.append("sing_box_start_failed")
                 return
-            start = asyncio.get_running_loop().time()
-            curl = await asyncio.create_subprocess_exec(
-                "curl", "--silent", "--show-error", "--max-time", "8",
-                "--proxy", f"socks5h://127.0.0.1:{32000 + index}",
-                "--output", "/dev/null", "--write-out", "%{http_code}",
-                "https://telegram.org/", stdout=asyncio.subprocess.PIPE,
-                stderr=subprocess.DEVNULL,
+            checks = (
+                ("Telegram", "https://telegram.org/", {200, 301, 302}),
+                ("Instagram", "https://www.instagram.com/", set(range(200, 500))),
+                ("WhatsApp", "https://web.whatsapp.com/", set(range(200, 500))),
+                ("OpenAI", "https://api.openai.com/v1/models", {401, 403, 429}),
             )
-            output, _ = await curl.communicate()
-            if curl.returncode == 0 and output.decode() in {"200", "301", "302"}:
-                node.telegram_verified = True
-                node.live_ms = round((asyncio.get_running_loop().time() - start) * 1000, 1)
+            all_services_ok = True
+            for service, url, accepted_codes in checks:
+                start = asyncio.get_running_loop().time()
+                curl = await asyncio.create_subprocess_exec(
+                    "curl", "--silent", "--show-error", "--max-time", "7",
+                    "--proxy", f"socks5h://127.0.0.1:{32000 + index}",
+                    "--output", "/dev/null", "--write-out", "%{http_code}", url,
+                    stdout=asyncio.subprocess.PIPE, stderr=subprocess.DEVNULL,
+                )
+                output, _ = await curl.communicate()
+                try:
+                    code = int(output.decode())
+                except ValueError:
+                    code = 0
+                if curl.returncode != 0 or code not in accepted_codes:
+                    node.errors.append(f"{service.lower()}_probe_failed")
+                    all_services_ok = False
+                    break
+                node.services_verified.append(service)
+                if service == "Telegram":
+                    node.telegram_verified = True
+                    node.live_ms = round(
+                        (asyncio.get_running_loop().time() - start) * 1000, 1
+                    )
+
+            if all_services_ok:
                 speed = await asyncio.create_subprocess_exec(
                     "curl", "--silent", "--show-error", "--max-time", "12",
                     "--proxy", f"socks5h://127.0.0.1:{32000 + index}",
@@ -357,8 +378,6 @@ async def live_probe(node: Node, index: int, semaphore: asyncio.Semaphore) -> No
                     node.speed_mbps = measured if measured > 0 else None
                 except ValueError:
                     node.speed_mbps = None
-            else:
-                node.errors.append("telegram_probe_failed")
             process.terminate()
             try:
                 await asyncio.wait_for(process.wait(), timeout=2)
@@ -443,7 +462,8 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
     report = {
         "version": 1, "generated_at": datetime.now(UTC).isoformat(),
         "policy": {
-            "excluded_countries": ["RU"], "require_telegram_probe": True,
+            "excluded_countries": ["RU"],
+            "required_proxy_services": ["Telegram", "Instagram", "WhatsApp", "OpenAI"],
             "network_diversity": "one_profile_per_host",
             "lte_status": "unverified_until_user_feedback",
         },
@@ -453,11 +473,67 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
     return links, report
 
 
+def happ_routing_link(generated_at: str) -> str:
+    profile = {
+        "Name": "MyVPN · Russia split",
+        "GlobalProxy": "true",
+        "RemoteDNSType": "DoH",
+        "RemoteDNSDomain": "https://cloudflare-dns.com/dns-query",
+        "RemoteDNSIP": "1.1.1.1",
+        "DomesticDNSType": "DoU",
+        "DomesticDNSDomain": "",
+        "DomesticDNSIP": "77.88.8.8",
+        "Geoipurl": (
+            "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/"
+            "download/geoip.dat"
+        ),
+        "Geositeurl": (
+            "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/"
+            "download/geosite.dat"
+        ),
+        "LastUpdated": str(int(datetime.fromisoformat(generated_at).timestamp())),
+        "DnsHosts": {
+            "cloudflare-dns.com": "1.1.1.1",
+        },
+        "DirectSites": [
+            "geosite:ru", "regexp:\\.(ru|su|xn--p1ai)$",
+            "domain:ozon.ru", "domain:ozonusercontent.com",
+            "domain:wildberries.ru", "domain:wb.ru",
+            "domain:gosuslugi.ru", "domain:nalog.gov.ru", "domain:mos.ru",
+            "domain:sberbank.ru", "domain:sber.ru", "domain:tbank.ru",
+            "domain:tinkoff.ru", "domain:alfabank.ru", "domain:alfa-bank.ru",
+            "domain:vtb.ru", "domain:gazprombank.ru", "domain:raiffeisen.ru",
+            "domain:yandex.ru", "domain:yandex.net", "domain:vk.com",
+            "domain:vk.ru", "domain:userapi.com", "domain:mail.ru",
+            "domain:rutube.ru", "domain:2gis.ru", "domain:avito.ru",
+        ],
+        "DirectIp": [
+            "geoip:ru", "geoip:private", "10.0.0.0/8", "172.16.0.0/12",
+            "192.168.0.0/16", "169.254.0.0/16", "224.0.0.0/4",
+            "255.255.255.255",
+        ],
+        "ProxySites": [], "ProxyIp": [], "BlockSites": [], "BlockIp": [],
+        "DomainStrategy": "IPIfNonMatch", "FakeDNS": "false",
+    }
+    encoded = base64.b64encode(
+        json.dumps(profile, ensure_ascii=False, separators=(",", ":")).encode()
+    ).decode()
+    return f"happ://routing/onadd/{encoded}"
+
+
 def write_outputs(output: Path, links: list[str], report: dict[str, Any]) -> None:
     output.mkdir(parents=True, exist_ok=True)
     raw = "\n".join(links) + "\n"
     (output / "vless.txt").write_text(raw)
-    (output / "happ.txt").write_text(raw)
+    happ = "\n".join((
+        "#profile-title: MyVPN",
+        "#profile-update-interval: 1",
+        "#subscription-ping-onopen-enabled: 1",
+        happ_routing_link(report["generated_at"]),
+        raw.rstrip(),
+        "",
+    ))
+    (output / "happ.txt").write_text(happ)
     encoded = base64.b64encode(raw.encode()).decode() + "\n"
     (output / "vless-base64.txt").write_text(encoded)
     (output / "subscription.txt").write_text(encoded)

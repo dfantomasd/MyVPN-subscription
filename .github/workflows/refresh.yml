@@ -3,7 +3,7 @@ name: Refresh VLESS subscription
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17,47 * * * *"
+    - cron: "17 * * * *"
 
 permissions:
   contents: write

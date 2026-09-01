@@ -9,7 +9,7 @@ proven by foreign CI, so the feed retains diverse fallback endpoints.
 
 ## Subscription links
 
-- HAPP (plain VLESS): `https://dfantomasd.github.io/MyVPN-subscription/public/happ.txt`
+- HAPP (VLESS + Russian split routing + hourly auto-update): `https://dfantomasd.github.io/MyVPN-subscription/public/happ.txt`
 - Karing (Base64): `https://dfantomasd.github.io/MyVPN-subscription/public/karing.txt`
 - HAPP CDN mirror: `https://cdn.jsdelivr.net/gh/dfantomasd/MyVPN-subscription@main/public/happ.txt`
 - Karing CDN mirror: `https://cdn.jsdelivr.net/gh/dfantomasd/MyVPN-subscription@main/public/karing.txt`
