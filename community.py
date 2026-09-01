@@ -31,30 +31,46 @@ class Source:
     report_url: str | None = None
 
 
+# These feeds are maintained specifically for Russian networks.  Generic global
+# aggregators are intentionally excluded: reachability from GitHub Actions says
+# nothing about reachability through a Russian mobile operator's DPI/allowlist.
 SOURCES = (
     Source(
-        "free_nodes", "FreeNodes",
-        "https://735754647.github.io/Free-Nodes/v2ray-raw.txt", 100,
-        "https://735754647.github.io/Free-Nodes/report.json",
+        "igareck_mobile_whitelist", "RU-LTE·Whitelist",
+        "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/"
+        "Vless-Reality-White-Lists-Rus-Mobile.txt", 130,
     ),
     Source(
-        "radikal", "Radikal",
-        "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/all/configs.txt", 75,
+        "igareck_cidr_whitelist", "RU-LTE·CIDR",
+        "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/"
+        "WHITE-CIDR-RU-all.txt", 125,
     ),
     Source(
-        "vestra", "Vestra",
-        "https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/protocols/vless.txt", 75,
+        "igareck_sni_whitelist", "RU-LTE·SNI",
+        "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/"
+        "WHITE-SNI-RU-all.txt", 120,
     ),
     Source(
-        "free_proxy_ru", "FreeProxyRU",
-        "https://raw.githubusercontent.com/nikita29a/FreeProxyList/main/mirror/1.txt", 60,
+        "vsv_mobile_whitelist", "RU-LTE·RKN",
+        "https://raw.githubusercontent.com/vsvavan2/vpn-config-rkn/main/output/"
+        "WHITE_Reality_Mobile_working.txt", 110,
+    ),
+    Source(
+        "igareck_mobile_regular", "RU-Mobile·Regular",
+        "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/"
+        "BLACK_VLESS_RUS_mobile.txt", 95,
+    ),
+    Source(
+        "aviamasters_ru", "RU-Mobile·Reserve",
+        "https://raw.githubusercontent.com/aviamastersgh/vpn-free-russia/main/ru_configs.txt", 85,
     ),
 )
 
 COUNTRY_NAMES = {
     "AT": "Austria", "CA": "Canada", "CH": "Switzerland", "DE": "Germany",
-    "FI": "Finland", "FR": "France", "GB": "UK", "JP": "Japan",
-    "NL": "Netherlands", "PL": "Poland", "RU": "Russia", "SE": "Sweden",
+    "BG": "Bulgaria", "FI": "Finland", "FR": "France", "GB": "UK",
+    "JP": "Japan", "NL": "Netherlands", "NO": "Norway", "PL": "Poland",
+    "RU": "Russia", "SE": "Sweden",
     "SG": "Singapore", "TR": "Turkey", "UA": "Ukraine", "US": "USA",
 }
 
@@ -157,6 +173,37 @@ def fetch(url: str, timeout: int = 30) -> bytes:
         if response.status != 200:
             raise RuntimeError(f"HTTP {response.status} from {url}")
         return response.read(20_000_000)
+
+
+def geolocate_endpoints(nodes: list[Node]) -> None:
+    """Set countries from resolved endpoint IPs, never from an upstream label."""
+    host_ips: dict[str, str] = {}
+    for node in nodes:
+        try:
+            answers = socket.getaddrinfo(node.host, node.port, type=socket.SOCK_STREAM)
+            host_ips[node.host] = answers[0][4][0]
+        except OSError:
+            node.errors.append("dns_failed")
+
+    countries: dict[str, str] = {}
+    ips = sorted(set(host_ips.values()))
+    for offset in range(0, len(ips), 100):
+        payload = json.dumps(ips[offset:offset + 100]).encode()
+        request = urllib.request.Request(
+            "http://ip-api.com/batch?fields=status,query,countryCode",
+            data=payload, headers={"Content-Type": "application/json", "User-Agent": "MyVPN/0.1"},
+        )
+        with urllib.request.urlopen(request, timeout=20) as response:  # noqa: S310
+            results = json.load(response)
+        for item in results:
+            if item.get("status") == "success" and item.get("countryCode"):
+                countries[str(item["query"])] = str(item["countryCode"]).upper()
+
+    for node in nodes:
+        endpoint_ip = host_ips.get(node.host)
+        node.country = countries.get(endpoint_ip or "")
+        if node.country is None:
+            node.errors.append("country_unknown")
 
 
 def stable_sample(items: list[str], limit: int) -> list[str]:
@@ -330,6 +377,7 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
         except (OSError, RuntimeError, json.JSONDecodeError) as exc:
             source_stats[source.key] = {"error": str(exc)}
 
+    await asyncio.to_thread(geolocate_endpoints, nodes)
     excluded_ru = sum(node.country == "RU" for node in nodes)
     nodes = [node for node in nodes if node.country != "RU"]
     deduped: dict[str, Node] = {}
@@ -340,10 +388,13 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
     nodes = list(deduped.values())
     semaphore = asyncio.Semaphore(100)
     await asyncio.gather(*(tcp_probe(node, semaphore, timeout) for node in nodes))
+    # Every TCP-reachable candidate must get the real VLESS+Telegram probe.  The
+    # former condition accidentally admitted only nodes carrying an upstream
+    # report, effectively preventing all other feeds from ever being tested.
     preliminary = sorted(
-        (node for node in nodes if node.proxy_ms is not None and not node.errors),
-        key=lambda node: node.proxy_ms or 99999,
-    )[:80]
+        (node for node in nodes if node.tcp_ms is not None and not node.errors),
+        key=lambda node: (-node.source.trust, node.tcp_ms or 99999),
+    )[:120]
     if not shutil.which("sing-box"):
         raise RuntimeError("sing-box is required for live Telegram verification")
     live_semaphore = asyncio.Semaphore(10)
