@@ -34,4 +34,6 @@ jobs:
       - name: Purge jsDelivr cache
         run: |
           curl --fail --silent --show-error \
-            "https://purge.jsdelivr.net/gh/dfantomasd/MyVPN-subscription@main/public/subscription.txt"
+            "https://purge.jsdelivr.net/gh/dfantomasd/MyVPN-subscription@main/public/happ.txt"
+          curl --fail --silent --show-error \
+            "https://purge.jsdelivr.net/gh/dfantomasd/MyVPN-subscription@main/public/karing.txt"

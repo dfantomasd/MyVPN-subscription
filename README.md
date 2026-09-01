@@ -5,9 +5,10 @@ endpoints and insecure configurations are excluded.
 
 ## Subscription links
 
-- HAPP/Karing (recommended): `https://cdn.jsdelivr.net/gh/dfantomasd/MyVPN-subscription@main/public/subscription.txt`
-- GitHub Pages mirror: `https://dfantomasd.github.io/MyVPN-subscription/public/subscription.txt`
-- Raw GitHub fallback: `https://raw.githubusercontent.com/dfantomasd/MyVPN-subscription/main/public/subscription.txt`
+- HAPP (plain VLESS): `https://dfantomasd.github.io/MyVPN-subscription/public/happ.txt`
+- Karing (Base64): `https://dfantomasd.github.io/MyVPN-subscription/public/karing.txt`
+- HAPP CDN mirror: `https://cdn.jsdelivr.net/gh/dfantomasd/MyVPN-subscription@main/public/happ.txt`
+- Karing CDN mirror: `https://cdn.jsdelivr.net/gh/dfantomasd/MyVPN-subscription@main/public/karing.txt`
 - Transparent ranking report: `https://raw.githubusercontent.com/dfantomasd/MyVPN-subscription/main/public/report.json`
 
 Node labels distinguish end-to-end proxy latency from TCP-only measurements.
