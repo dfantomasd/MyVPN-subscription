@@ -36,6 +36,11 @@ class Source:
 # nothing about reachability through a Russian mobile operator's DPI/allowlist.
 SOURCES = (
     Source(
+        "aetris_mobile_whitelist", "RU-LTE·Aetris",
+        "https://raw.githubusercontent.com/flaafix/AetrisVPN-white-list-lite/"
+        "refs/heads/main/AetrisVPN.txt", 135,
+    ),
+    Source(
         "igareck_mobile_whitelist", "RU-LTE·Whitelist",
         "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/"
         "Vless-Reality-White-Lists-Rus-Mobile.txt", 130,
@@ -404,7 +409,11 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
     for node in nodes:
         node.score = calculate_score(node)
     ranked = sorted(
-        (node for node in nodes if node.score > 0 and node.telegram_verified),
+        (
+            node for node in nodes
+            if node.score > 0 and node.telegram_verified
+            and node.speed_mbps is not None and node.speed_mbps >= 1.0
+        ),
         key=lambda node: node.score, reverse=True,
     )
 
