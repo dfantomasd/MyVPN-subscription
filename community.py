@@ -63,7 +63,11 @@ def country_flag(code: str | None) -> str:
 
 
 def detect_country(text: str) -> str | None:
-    if "🇷🇺" in text or "росси" in text.lower() or "russia" in text.lower():
+    lowered = text.lower()
+    if (
+        "🇷🇺" in text or "росси" in lowered or "russia" in lowered
+        or lowered.endswith(".ru") or re.search(r"(?:^|[.\-_])ru\d*(?:[.\-_]|$)", lowered)
+    ):
         return "RU"
     match = re.search(r"(?:^|[| _\-])([A-Z]{2})(?:$|[| _\-])", text.upper())
     if match and match.group(1) in COUNTRY_NAMES:
@@ -127,7 +131,7 @@ def parse_vless(uri: str, source: Source) -> Node | None:
     return Node(
         source=source, uri=uri, node_id=node_id, host=host, port=port,
         security=security, transport=transport, original_name=original_name,
-        country=detect_country(original_name),
+        country=detect_country(original_name) or detect_country(host),
     )
 
 
@@ -191,7 +195,7 @@ def calculate_score(node: Node) -> float:
     latency = node.proxy_ms if node.proxy_ms is not None else node.tcp_ms
     if latency is None or node.errors:
         return 0
-    latency_score = max(0, 40 - latency / 12)
+    latency_score = max(0, 40 - latency / 75)
     verified_score = 30 if node.proxy_ms is not None else 0
     security_score = 15 if node.security == "reality" else 10
     source_score = node.source.trust / 10
@@ -247,13 +251,17 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
     await asyncio.gather(*(tcp_probe(node, semaphore, timeout) for node in nodes))
     for node in nodes:
         node.score = calculate_score(node)
-    ranked = sorted((node for node in nodes if node.score > 0), key=lambda node: node.score, reverse=True)
+    ranked = sorted(
+        (node for node in nodes if node.score > 0 and node.proxy_ms is not None),
+        key=lambda node: node.score, reverse=True,
+    )
 
     selected: list[Node] = []
     source_counts: dict[str, int] = {}
     host_counts: dict[str, int] = {}
     for node in ranked:
-        if source_counts.get(node.source.key, 0) >= max(3, max_output // 2):
+        source_cap = max_output if node.proxy_ms is not None else max(3, max_output // 2)
+        if source_counts.get(node.source.key, 0) >= source_cap:
             continue
         if host_counts.get(node.host, 0) >= 1:
             continue
@@ -273,7 +281,7 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
         report_nodes.append(item)
     report = {
         "version": 1, "generated_at": datetime.now(UTC).isoformat(),
-        "policy": {"excluded_countries": ["RU"]},
+        "policy": {"excluded_countries": ["RU"], "require_end_to_end_probe": True},
         "sources": source_stats, "excluded_ru": excluded_ru,
         "candidates": len(nodes), "published": len(links), "nodes": report_nodes,
     }
