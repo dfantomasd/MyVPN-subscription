@@ -5,8 +5,9 @@ endpoints and insecure configurations are excluded.
 
 ## Subscription links
 
-- HAPP/Karing raw VLESS: `https://raw.githubusercontent.com/dfantomasd/MyVPN-subscription/main/public/vless.txt`
-- Base64 subscription: `https://raw.githubusercontent.com/dfantomasd/MyVPN-subscription/main/public/vless-base64.txt`
+- HAPP/Karing (recommended): `https://cdn.jsdelivr.net/gh/dfantomasd/MyVPN-subscription@main/public/subscription.txt`
+- GitHub Pages mirror: `https://dfantomasd.github.io/MyVPN-subscription/public/subscription.txt`
+- Raw GitHub fallback: `https://raw.githubusercontent.com/dfantomasd/MyVPN-subscription/main/public/subscription.txt`
 - Transparent ranking report: `https://raw.githubusercontent.com/dfantomasd/MyVPN-subscription/main/public/report.json`
 
 Node labels distinguish end-to-end proxy latency from TCP-only measurements.

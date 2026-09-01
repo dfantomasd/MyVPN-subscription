@@ -284,7 +284,9 @@ def write_outputs(output: Path, links: list[str], report: dict[str, Any]) -> Non
     output.mkdir(parents=True, exist_ok=True)
     raw = "\n".join(links) + "\n"
     (output / "vless.txt").write_text(raw)
-    (output / "vless-base64.txt").write_text(base64.b64encode(raw.encode()).decode() + "\n")
+    encoded = base64.b64encode(raw.encode()).decode() + "\n"
+    (output / "vless-base64.txt").write_text(encoded)
+    (output / "subscription.txt").write_text(encoded)
     (output / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
 
 
