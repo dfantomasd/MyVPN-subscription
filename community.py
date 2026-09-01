@@ -58,23 +58,6 @@ COUNTRY_NAMES = {
     "SG": "Singapore", "TR": "Turkey", "UA": "Ukraine", "US": "USA",
 }
 
-LTE_CONFIRMED_HOSTS = {"31.76.69.40"}
-
-
-def matches_ru_lte_profile(node: "Node") -> bool:
-    params = dict(parse_qsl(urlsplit(node.uri).query))
-    base_match = (
-        node.security == "reality"
-        and node.transport == "tcp"
-        and node.port == 443
-        and params.get("flow") == "xtls-rprx-vision"
-        and params.get("sni", "").lower() == "eu-central.cendora.ru"
-    )
-    if node.host in LTE_CONFIRMED_HOSTS:
-        return base_match and params.get("fp") == "qq"
-    return base_match
-
-
 def country_flag(code: str | None) -> str:
     if not code or len(code) != 2:
         return "🌐"
@@ -233,9 +216,8 @@ def display_name(node: Node, rank: int) -> str:
     speed = f"{node.speed_mbps:.0f}Mbps" if node.speed_mbps is not None else "speed—"
     country = node.country or "XX"
     security = "Reality" if node.security == "reality" else "TLS"
-    lte = " · 📱LTE-RU" if matches_ru_lte_profile(node) else ""
     return (
-        f"{country_flag(node.country)} {country} · #{rank:02d}{lte} · {ping} · "
+        f"{country_flag(node.country)} {country} · #{rank:02d} · {ping} · "
         f"{speed} · {security} · {node.source.label}"
     )
 
@@ -307,11 +289,6 @@ async def live_probe(node: Node, index: int, semaphore: asyncio.Semaphore) -> No
                 stderr=subprocess.DEVNULL,
             )
             output, _ = await curl.communicate()
-            process.terminate()
-            try:
-                await asyncio.wait_for(process.wait(), timeout=2)
-            except TimeoutError:
-                process.kill()
             if curl.returncode == 0 and output.decode() in {"200", "301", "302"}:
                 node.telegram_verified = True
                 node.live_ms = round((asyncio.get_running_loop().time() - start) * 1000, 1)
@@ -319,7 +296,7 @@ async def live_probe(node: Node, index: int, semaphore: asyncio.Semaphore) -> No
                     "curl", "--silent", "--show-error", "--max-time", "12",
                     "--proxy", f"socks5h://127.0.0.1:{32000 + index}",
                     "--output", "/dev/null", "--write-out", "%{speed_download}",
-                    "https://speed.cloudflare.com/__down?bytes=1000000",
+                    "https://proof.ovh.net/files/1Mb.dat",
                     stdout=asyncio.subprocess.PIPE, stderr=subprocess.DEVNULL,
                 )
                 speed_output, _ = await speed.communicate()
@@ -330,6 +307,11 @@ async def live_probe(node: Node, index: int, semaphore: asyncio.Semaphore) -> No
                     node.speed_mbps = None
             else:
                 node.errors.append("telegram_probe_failed")
+            process.terminate()
+            try:
+                await asyncio.wait_for(process.wait(), timeout=2)
+            except TimeoutError:
+                process.kill()
 
 
 async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple[list[str], dict[str, Any]]:
@@ -359,10 +341,7 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
     semaphore = asyncio.Semaphore(100)
     await asyncio.gather(*(tcp_probe(node, semaphore, timeout) for node in nodes))
     preliminary = sorted(
-        (
-            node for node in nodes
-            if node.proxy_ms is not None and not node.errors and matches_ru_lte_profile(node)
-        ),
+        (node for node in nodes if node.proxy_ms is not None and not node.errors),
         key=lambda node: node.proxy_ms or 99999,
     )[:80]
     if not shutil.which("sing-box"):
@@ -374,11 +353,8 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
     for node in nodes:
         node.score = calculate_score(node)
     ranked = sorted(
-        (
-            node for node in nodes if node.score > 0 and node.telegram_verified
-            and matches_ru_lte_profile(node)
-        ),
-        key=lambda node: (node.host in LTE_CONFIRMED_HOSTS, node.score), reverse=True,
+        (node for node in nodes if node.score > 0 and node.telegram_verified),
+        key=lambda node: node.score, reverse=True,
     )
 
     selected: list[Node] = []
@@ -408,8 +384,8 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
         "version": 1, "generated_at": datetime.now(UTC).isoformat(),
         "policy": {
             "excluded_countries": ["RU"], "require_telegram_probe": True,
-            "profile": "ru-lte-cendora", "confirmed_hosts": sorted(LTE_CONFIRMED_HOSTS),
-            "sni": "eu-central.cendora.ru", "one_profile_per_host": True,
+            "network_diversity": "one_profile_per_host",
+            "lte_status": "unverified_until_user_feedback",
         },
         "sources": source_stats, "excluded_ru": excluded_ru,
         "candidates": len(nodes), "published": len(links), "nodes": report_nodes,
