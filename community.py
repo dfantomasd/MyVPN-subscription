@@ -9,7 +9,10 @@ import hashlib
 import json
 import math
 import re
+import shutil
 import socket
+import subprocess
+import tempfile
 import urllib.request
 import uuid
 from dataclasses import asdict, dataclass, field
@@ -92,6 +95,8 @@ class Node:
     tcp_ms: float | None = None
     proxy_ms: float | None = None
     speed_mbps: float | None = None
+    live_ms: float | None = None
+    telegram_verified: bool = False
     score: float = 0
     errors: list[str] = field(default_factory=list)
 
@@ -192,11 +197,11 @@ def apply_upstream_report(nodes: list[Node], report: dict[str, Any]) -> None:
 
 
 def calculate_score(node: Node) -> float:
-    latency = node.proxy_ms if node.proxy_ms is not None else node.tcp_ms
+    latency = node.live_ms or node.proxy_ms or node.tcp_ms
     if latency is None or node.errors:
         return 0
     latency_score = max(0, 40 - latency / 75)
-    verified_score = 30 if node.proxy_ms is not None else 0
+    verified_score = 35 if node.telegram_verified else (20 if node.proxy_ms is not None else 0)
     security_score = 15 if node.security == "reality" else 10
     source_score = node.source.trust / 10
     speed_score = min(5, math.log2(1 + node.speed_mbps)) if node.speed_mbps else 0
@@ -206,8 +211,8 @@ def calculate_score(node: Node) -> float:
 
 
 def display_name(node: Node, rank: int) -> str:
-    latency = node.proxy_ms if node.proxy_ms is not None else node.tcp_ms
-    prefix = "" if node.proxy_ms is not None else "TCP "
+    latency = node.live_ms or node.proxy_ms or node.tcp_ms
+    prefix = "" if node.live_ms is not None else ("upstream " if node.proxy_ms is not None else "TCP ")
     ping = f"{prefix}{latency:.0f}ms" if latency is not None else "ping—"
     speed = f"{node.speed_mbps:.0f}Mbps" if node.speed_mbps is not None else "speed—"
     country = node.country or "XX"
@@ -221,6 +226,80 @@ def display_name(node: Node, rank: int) -> str:
 def named_uri(node: Node, rank: int) -> str:
     parsed = urlsplit(node.uri)
     return urlunsplit((parsed.scheme, parsed.netloc, parsed.path, parsed.query, quote(display_name(node, rank))))
+
+
+def sing_box_config(node: Node, port: int) -> dict[str, Any] | None:
+    parsed = urlsplit(node.uri)
+    params = dict(parse_qsl(parsed.query))
+    outbound: dict[str, Any] = {
+        "type": "vless", "tag": "proxy", "server": node.host,
+        "server_port": node.port, "uuid": parsed.username,
+    }
+    if params.get("flow"):
+        outbound["flow"] = params["flow"]
+    tls: dict[str, Any] = {"enabled": True, "server_name": params.get("sni", node.host)}
+    if params.get("fp"):
+        fingerprint = "chrome" if params["fp"] == "randomized" else params["fp"]
+        tls["utls"] = {"enabled": True, "fingerprint": fingerprint}
+    if node.security == "reality":
+        tls["reality"] = {
+            "enabled": True, "public_key": params.get("pbk", ""),
+            "short_id": params.get("sid", ""),
+        }
+    outbound["tls"] = tls
+    if node.transport == "grpc":
+        outbound["transport"] = {"type": "grpc", "service_name": params.get("serviceName", "")}
+    elif node.transport == "ws":
+        outbound["transport"] = {
+            "type": "ws", "path": params.get("path", "/"),
+            "headers": {"Host": params.get("host", params.get("sni", node.host))},
+        }
+    elif node.transport != "tcp":
+        return None
+    return {
+        "log": {"level": "error"},
+        "inbounds": [{"type": "socks", "listen": "127.0.0.1", "listen_port": port}],
+        "outbounds": [outbound, {"type": "direct", "tag": "direct"}],
+        "route": {"final": "proxy"},
+    }
+
+
+async def live_probe(node: Node, index: int, semaphore: asyncio.Semaphore) -> None:
+    config = sing_box_config(node, 32000 + index)
+    if not config:
+        node.errors.append("unsupported_by_probe")
+        return
+    async with semaphore:
+        with tempfile.NamedTemporaryFile("w", suffix=".json") as config_file:
+            json.dump(config, config_file)
+            config_file.flush()
+            process = await asyncio.create_subprocess_exec(
+                "sing-box", "run", "-c", config_file.name,
+                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+            )
+            await asyncio.sleep(0.35)
+            if process.returncode is not None:
+                node.errors.append("sing_box_start_failed")
+                return
+            start = asyncio.get_running_loop().time()
+            curl = await asyncio.create_subprocess_exec(
+                "curl", "--silent", "--show-error", "--max-time", "8",
+                "--proxy", f"socks5h://127.0.0.1:{32000 + index}",
+                "--output", "/dev/null", "--write-out", "%{http_code}",
+                "https://telegram.org/", stdout=asyncio.subprocess.PIPE,
+                stderr=subprocess.DEVNULL,
+            )
+            output, _ = await curl.communicate()
+            process.terminate()
+            try:
+                await asyncio.wait_for(process.wait(), timeout=2)
+            except TimeoutError:
+                process.kill()
+            if curl.returncode == 0 and output.decode() in {"200", "301", "302"}:
+                node.telegram_verified = True
+                node.live_ms = round((asyncio.get_running_loop().time() - start) * 1000, 1)
+            else:
+                node.errors.append("telegram_probe_failed")
 
 
 async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple[list[str], dict[str, Any]]:
@@ -249,10 +328,20 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
     nodes = list(deduped.values())
     semaphore = asyncio.Semaphore(100)
     await asyncio.gather(*(tcp_probe(node, semaphore, timeout) for node in nodes))
+    preliminary = sorted(
+        (node for node in nodes if node.proxy_ms is not None and not node.errors),
+        key=lambda node: node.proxy_ms or 99999,
+    )[:80]
+    if not shutil.which("sing-box"):
+        raise RuntimeError("sing-box is required for live Telegram verification")
+    live_semaphore = asyncio.Semaphore(10)
+    await asyncio.gather(
+        *(live_probe(node, index, live_semaphore) for index, node in enumerate(preliminary))
+    )
     for node in nodes:
         node.score = calculate_score(node)
     ranked = sorted(
-        (node for node in nodes if node.score > 0 and node.proxy_ms is not None),
+        (node for node in nodes if node.score > 0 and node.telegram_verified),
         key=lambda node: node.score, reverse=True,
     )
 
@@ -281,7 +370,7 @@ async def build(limit_per_source: int, max_output: int, timeout: float) -> tuple
         report_nodes.append(item)
     report = {
         "version": 1, "generated_at": datetime.now(UTC).isoformat(),
-        "policy": {"excluded_countries": ["RU"], "require_end_to_end_probe": True},
+        "policy": {"excluded_countries": ["RU"], "require_telegram_probe": True},
         "sources": source_stats, "excluded_ru": excluded_ru,
         "candidates": len(nodes), "published": len(links), "nodes": report_nodes,
     }

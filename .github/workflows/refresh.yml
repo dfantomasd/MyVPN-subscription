@@ -21,6 +21,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
+      - name: Install pinned sing-box probe runtime
+        run: |
+          curl -fsSLo /tmp/sing-box.tar.gz \
+            https://github.com/SagerNet/sing-box/releases/download/v1.14.0/sing-box-1.14.0-linux-amd64.tar.gz
+          tar -xzf /tmp/sing-box.tar.gz -C /tmp
+          sudo install /tmp/sing-box-1.14.0-linux-amd64/sing-box /usr/local/bin/sing-box
       - name: Fetch, rank and publish
         run: python community.py --output public --limit-per-source 200 --max-output 30
       - name: Commit changed publication
