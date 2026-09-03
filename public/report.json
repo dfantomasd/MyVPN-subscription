@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-03T14:32:48.099292+00:00",
+  "generated_at": "2026-09-03T18:37:15.879048+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,12 +20,12 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 36,
-      "accepted": 35
+      "fetched": 1,
+      "accepted": 0
     },
     "igareck_cidr_whitelist": {
-      "fetched": 36,
-      "accepted": 35
+      "fetched": 1,
+      "accepted": 0
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
@@ -36,31 +36,31 @@
       "accepted": 19
     },
     "igareck_mobile_regular": {
-      "fetched": 57,
-      "accepted": 56
+      "fetched": 53,
+      "accepted": 49
     },
     "aviamasters_ru": {
-      "fetched": 40,
-      "accepted": 40
+      "fetched": 10,
+      "accepted": 10
     }
   },
-  "excluded_ru": 130,
-  "candidates": 167,
+  "excluded_ru": 31,
+  "candidates": 159,
   "published": 1,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "2485da6bdd85",
-      "host": "69.46.46.125",
-      "port": 443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇳🇱 The Netherlands, Schiphol-Rijk | [BL]",
-      "country": "US",
-      "tcp_ms": 21.1,
+      "node_id": "71f5d1b03919",
+      "host": "185.223.57.10",
+      "port": 33743,
+      "security": "reality",
+      "transport": "grpc",
+      "original_name": "🇵🇱 Poland, Warsaw | [BL]",
+      "country": "PL",
+      "tcp_ms": 109.1,
       "proxy_ms": null,
-      "speed_mbps": 2.99,
-      "live_ms": 3173.0,
+      "speed_mbps": 1.98,
+      "live_ms": 1145.0,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 56.5,
+      "score": 85.81,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 3173ms · 3Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇵🇱 PL · #01 · 1145ms · 2Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
