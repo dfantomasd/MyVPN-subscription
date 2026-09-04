@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-04T09:36:39.330989+00:00",
+  "generated_at": "2026-09-04T21:26:54.363534+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,71 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 50,
-      "accepted": 50
+      "fetched": 75,
+      "accepted": 70
     },
     "igareck_cidr_whitelist": {
-      "fetched": 50,
-      "accepted": 50
+      "fetched": 75,
+      "accepted": 70
     },
     "igareck_sni_whitelist": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 5,
+      "accepted": 5
     },
     "vsv_mobile_whitelist": {
       "fetched": 20,
-      "accepted": 19
+      "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 148,
-      "accepted": 145
+      "fetched": 113,
+      "accepted": 104
     },
     "aviamasters_ru": {
-      "fetched": 50,
-      "accepted": 50
+      "fetched": 75,
+      "accepted": 70
     }
   },
-  "excluded_ru": 171,
-  "candidates": 255,
-  "published": 3,
+  "excluded_ru": 225,
+  "candidates": 216,
+  "published": 2,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "acccf7a84798",
-      "host": "95.211.164.121",
+      "node_id": "ea7fea662e5f",
+      "host": "162.217.248.241",
+      "port": 443,
+      "security": "tls",
+      "transport": "tcp",
+      "original_name": "🇺🇸 United States, Staten Island | [BL]",
+      "country": "US",
+      "tcp_ms": 8.4,
+      "proxy_ms": null,
+      "speed_mbps": 10.04,
+      "live_ms": 386.6,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 92.81,
+      "errors": [],
+      "display_name": "🇺🇸 US · #01 · 387ms · 10Mbps · TLS · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_whitelist",
+      "node_id": "72f251749b22",
+      "host": "91.107.122.217",
       "port": 443,
       "security": "reality",
       "transport": "grpc",
-      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
-      "country": "NL",
-      "tcp_ms": 145.8,
+      "original_name": "🇩🇪 Germany | 🌐 | [*CIDR]",
+      "country": "GB",
+      "tcp_ms": 138.3,
       "proxy_ms": null,
-      "speed_mbps": 10.51,
-      "live_ms": 743.0,
+      "speed_mbps": 3.08,
+      "live_ms": 1533.9,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,57 +92,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 93.12,
+      "score": 84.58,
       "errors": [],
-      "display_name": "🇳🇱 NL · #01 · 743ms · 11Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "b8fba6739ddb",
-      "host": "72.56.75.54",
-      "port": 443,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
-      "country": "NL",
-      "tcp_ms": 146.0,
-      "proxy_ms": null,
-      "speed_mbps": 4.23,
-      "live_ms": 744.3,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 91.96,
-      "errors": [],
-      "display_name": "🇳🇱 NL · #02 · 744ms · 4Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "aetris_mobile_whitelist",
-      "node_id": "f3de4d3bc2d5",
-      "host": "152.67.211.233",
-      "port": 8899,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇰🇷 AetrisVPN",
-      "country": "KR",
-      "tcp_ms": 132.9,
-      "proxy_ms": null,
-      "speed_mbps": 2.1,
-      "live_ms": 1788.8,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 81.28,
-      "errors": [],
-      "display_name": "🇰🇷 KR · #03 · 1789ms · 2Mbps · Reality · RU-LTE·Aetris"
+      "display_name": "🇬🇧 GB · #02 · 1534ms · 3Mbps · Reality · RU-LTE·Whitelist"
     }
   ]
 }
