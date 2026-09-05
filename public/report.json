@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-05T12:41:21.913632+00:00",
+  "generated_at": "2026-09-05T16:03:08.204379+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 10,
+      "accepted": 10
     },
     "igareck_cidr_whitelist": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 10,
+      "accepted": 10
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 10,
+      "accepted": 10
     },
     "igareck_mobile_regular": {
-      "fetched": 88,
-      "accepted": 70
+      "fetched": 38,
+      "accepted": 14
     },
     "aviamasters_ru": {
       "fetched": 5,
       "accepted": 5
     }
   },
-  "excluded_ru": 2,
-  "candidates": 185,
+  "excluded_ru": 36,
+  "candidates": 125,
   "published": 1,
   "nodes": [
     {
-      "source": "vsv_mobile_whitelist",
-      "node_id": "94827c029b4a",
-      "host": "ns.o11111o.club",
-      "port": 443,
+      "source": "igareck_mobile_regular",
+      "node_id": "8892d36029d9",
+      "host": "216.167.21.32",
+      "port": 40573,
       "security": "reality",
-      "transport": "grpc",
-      "original_name": "🇩🇪 Germany | 🌐 | [*CIDR]",
-      "country": "GB",
-      "tcp_ms": 209.1,
+      "transport": "tcp",
+      "original_name": "🇺🇸 United States, Los Angeles | [BL]",
+      "country": "US",
+      "tcp_ms": 54.3,
       "proxy_ms": null,
-      "speed_mbps": 1.19,
-      "live_ms": 1419.9,
+      "speed_mbps": 2.42,
+      "live_ms": 995.0,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 83.2,
+      "score": 88.01,
       "errors": [],
-      "display_name": "🇬🇧 GB · #01 · 1420ms · 1Mbps · Reality · RU-LTE·RKN"
+      "display_name": "🇺🇸 US · #01 · 995ms · 2Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
