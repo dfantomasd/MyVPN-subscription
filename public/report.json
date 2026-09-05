@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-05T09:02:41.921909+00:00",
+  "generated_at": "2026-09-05T12:41:21.913632+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -32,35 +32,35 @@
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 10,
-      "accepted": 10
+      "fetched": 5,
+      "accepted": 5
     },
     "igareck_mobile_regular": {
-      "fetched": 122,
-      "accepted": 112
+      "fetched": 88,
+      "accepted": 70
     },
     "aviamasters_ru": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 5,
+      "accepted": 5
     }
   },
   "excluded_ru": 2,
-  "candidates": 232,
+  "candidates": 185,
   "published": 1,
   "nodes": [
     {
-      "source": "igareck_mobile_regular",
-      "node_id": "a50876566e1e",
-      "host": "84.32.61.87",
+      "source": "vsv_mobile_whitelist",
+      "node_id": "94827c029b4a",
+      "host": "ns.o11111o.club",
       "port": 443,
       "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇺🇸 United States, Chicago | [BL]",
-      "country": "US",
-      "tcp_ms": 47.8,
+      "transport": "grpc",
+      "original_name": "🇩🇪 Germany | 🌐 | [*CIDR]",
+      "country": "GB",
+      "tcp_ms": 209.1,
       "proxy_ms": null,
-      "speed_mbps": 6.77,
-      "live_ms": 608.4,
+      "speed_mbps": 1.19,
+      "live_ms": 1419.9,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 94.35,
+      "score": 83.2,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 608ms · 7Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇬🇧 GB · #01 · 1420ms · 1Mbps · Reality · RU-LTE·RKN"
     }
   ]
 }
