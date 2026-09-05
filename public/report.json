@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-05T16:03:08.204379+00:00",
+  "generated_at": "2026-09-05T18:15:55.318431+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,15 +20,15 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 10,
-      "accepted": 10
+      "fetched": 5,
+      "accepted": 5
     },
     "igareck_cidr_whitelist": {
-      "fetched": 10,
-      "accepted": 10
+      "fetched": 5,
+      "accepted": 5
     },
     "igareck_sni_whitelist": {
-      "fetched": 0,
+      "fetched": 5,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
@@ -36,31 +36,31 @@
       "accepted": 10
     },
     "igareck_mobile_regular": {
-      "fetched": 38,
-      "accepted": 14
+      "fetched": 43,
+      "accepted": 42
     },
     "aviamasters_ru": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 10,
+      "accepted": 10
     }
   },
-  "excluded_ru": 36,
-  "candidates": 125,
+  "excluded_ru": 31,
+  "candidates": 153,
   "published": 1,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "8892d36029d9",
-      "host": "216.167.21.32",
-      "port": 40573,
+      "node_id": "3d2577faf01e",
+      "host": "82.39.171.12",
+      "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇺🇸 United States, Los Angeles | [BL]",
-      "country": "US",
-      "tcp_ms": 54.3,
+      "original_name": ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]",
+      "country": "GB",
+      "tcp_ms": 151.0,
       "proxy_ms": null,
-      "speed_mbps": 2.42,
-      "live_ms": 995.0,
+      "speed_mbps": 3.96,
+      "live_ms": 920.9,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 88.01,
+      "score": 89.53,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 995ms · 2Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇬🇧 GB · #01 · 921ms · 4Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
