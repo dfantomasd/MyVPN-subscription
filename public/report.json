@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-05T04:23:21.799987+00:00",
+  "generated_at": "2026-09-05T09:02:41.921909+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,119 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 0,
+      "accepted": 0
     },
     "igareck_cidr_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 0,
+      "accepted": 0
     },
     "igareck_sni_whitelist": {
+      "fetched": 0,
+      "accepted": 0
+    },
+    "vsv_mobile_whitelist": {
       "fetched": 10,
       "accepted": 10
     },
-    "vsv_mobile_whitelist": {
-      "fetched": 20,
-      "accepted": 8
-    },
     "igareck_mobile_regular": {
-      "fetched": 119,
-      "accepted": 90
+      "fetched": 122,
+      "accepted": 112
     },
     "aviamasters_ru": {
-      "fetched": 40,
-      "accepted": 21
+      "fetched": 0,
+      "accepted": 0
     }
   },
-  "excluded_ru": 35,
-  "candidates": 215,
-  "published": 4,
+  "excluded_ru": 2,
+  "candidates": 232,
+  "published": 1,
   "nodes": [
     {
-      "source": "aetris_mobile_whitelist",
-      "node_id": "2b22d1ae4790",
-      "host": "8.39.125.152",
-      "port": 8443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇷🇺 AetrisVPN",
-      "country": "US",
-      "tcp_ms": 11.6,
-      "proxy_ms": null,
-      "speed_mbps": 5.24,
-      "live_ms": 730.3,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 91.4,
-      "errors": [],
-      "display_name": "🇺🇸 US · #01 · 730ms · 5Mbps · TLS · RU-LTE·Aetris"
-    },
-    {
-      "source": "aetris_mobile_whitelist",
-      "node_id": "8270786d900e",
-      "host": "104.17.222.14",
-      "port": 2053,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇷🇺 AetrisVPN",
-      "country": "CA",
-      "tcp_ms": 9.9,
-      "proxy_ms": null,
-      "speed_mbps": 5.33,
-      "live_ms": 810.4,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 90.36,
-      "errors": [],
-      "display_name": "🇨🇦 CA · #02 · 810ms · 5Mbps · TLS · RU-LTE·Aetris"
-    },
-    {
-      "source": "aetris_mobile_whitelist",
-      "node_id": "f48b7527410f",
-      "host": "104.26.13.142",
-      "port": 2083,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇸🇪 AetrisVPN",
-      "country": "CA",
-      "tcp_ms": 17.0,
-      "proxy_ms": null,
-      "speed_mbps": 4.83,
-      "live_ms": 1236.7,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 84.55,
-      "errors": [],
-      "display_name": "🇨🇦 CA · #03 · 1237ms · 5Mbps · TLS · RU-LTE·Aetris"
-    },
-    {
-      "source": "vsv_mobile_whitelist",
-      "node_id": "b3bf520f0fa8",
-      "host": "91.107.122.141",
+      "source": "igareck_mobile_regular",
+      "node_id": "a50876566e1e",
+      "host": "84.32.61.87",
       "port": 443,
       "security": "reality",
-      "transport": "grpc",
-      "original_name": "🇩🇪 Germany | 🌐 | [*CIDR]",
-      "country": "GB",
-      "tcp_ms": 166.9,
+      "transport": "tcp",
+      "original_name": "🇺🇸 United States, Chicago | [BL]",
+      "country": "US",
+      "tcp_ms": 47.8,
       "proxy_ms": null,
-      "speed_mbps": 1.26,
-      "live_ms": 2169.1,
+      "speed_mbps": 6.77,
+      "live_ms": 608.4,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -140,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 73.25,
+      "score": 94.35,
       "errors": [],
-      "display_name": "🇬🇧 GB · #04 · 2169ms · 1Mbps · Reality · RU-LTE·RKN"
+      "display_name": "🇺🇸 US · #01 · 608ms · 7Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
