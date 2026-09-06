@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-06T19:09:16.078282+00:00",
+  "generated_at": "2026-09-06T21:19:32.370540+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 10,
-      "accepted": 10
+      "fetched": 50,
+      "accepted": 35
     },
     "igareck_cidr_whitelist": {
-      "fetched": 10,
-      "accepted": 10
+      "fetched": 50,
+      "accepted": 35
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 10,
-      "accepted": 10
+      "fetched": 20,
+      "accepted": 19
     },
     "igareck_mobile_regular": {
-      "fetched": 115,
-      "accepted": 105
+      "fetched": 43,
+      "accepted": 37
     },
     "aviamasters_ru": {
-      "fetched": 10,
-      "accepted": 10
+      "fetched": 50,
+      "accepted": 35
     }
   },
-  "excluded_ru": 41,
-  "candidates": 216,
-  "published": 1,
+  "excluded_ru": 108,
+  "candidates": 152,
+  "published": 4,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "cfc738c7974f",
-      "host": "173.249.200.123",
-      "port": 443,
+      "node_id": "e9a4ccb5b9e4",
+      "host": "132.243.228.209",
+      "port": 8443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇺🇸 United States, San Jose | [BL]",
-      "country": "US",
-      "tcp_ms": 16.9,
+      "original_name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "country": "DE",
+      "tcp_ms": 89.9,
       "proxy_ms": null,
-      "speed_mbps": 2.32,
-      "live_ms": 1760.4,
+      "speed_mbps": 5.26,
+      "live_ms": 825.5,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,81 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 77.76,
+      "score": 91.14,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 1760ms · 2Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇩🇪 DE · #01 · 826ms · 5Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "b3c9b643dfdb",
+      "host": "173.249.200.123",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇺🇸 United States, San Jose | [BL]",
+      "country": "US",
+      "tcp_ms": 63.5,
+      "proxy_ms": null,
+      "speed_mbps": 3.84,
+      "live_ms": 1376.7,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 83.42,
+      "errors": [],
+      "display_name": "🇺🇸 US · #02 · 1377ms · 4Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "f5c1d1169cb5",
+      "host": "91.193.17.234",
+      "port": 9460,
+      "security": "reality",
+      "transport": "grpc",
+      "original_name": "🇺🇸 United States, Ashburn | [BL]",
+      "country": "GB",
+      "tcp_ms": 88.2,
+      "proxy_ms": null,
+      "speed_mbps": 3.82,
+      "live_ms": 2448.8,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 69.12,
+      "errors": [],
+      "display_name": "🇬🇧 GB · #03 · 2449ms · 4Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_whitelist",
+      "node_id": "b84fa6ef2827",
+      "host": "fast48.slopllex.app",
+      "port": 443,
+      "security": "tls",
+      "transport": "tcp",
+      "original_name": ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]",
+      "country": "BR",
+      "tcp_ms": 133.0,
+      "proxy_ms": null,
+      "speed_mbps": 3.92,
+      "live_ms": 2637.5,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 65.13,
+      "errors": [],
+      "display_name": "🇧🇷 BR · #04 · 2638ms · 4Mbps · TLS · RU-LTE·Whitelist"
     }
   ]
 }
