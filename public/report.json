@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-06T21:19:32.370540+00:00",
+  "generated_at": "2026-09-06T23:51:49.622655+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 50,
-      "accepted": 35
+      "fetched": 25,
+      "accepted": 15
     },
     "igareck_cidr_whitelist": {
-      "fetched": 50,
-      "accepted": 35
+      "fetched": 25,
+      "accepted": 15
     },
     "igareck_sni_whitelist": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 10,
+      "accepted": 10
     },
     "vsv_mobile_whitelist": {
       "fetched": 20,
-      "accepted": 19
+      "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 43,
-      "accepted": 37
+      "fetched": 95,
+      "accepted": 85
     },
     "aviamasters_ru": {
-      "fetched": 50,
-      "accepted": 35
+      "fetched": 25,
+      "accepted": 15
     }
   },
-  "excluded_ru": 108,
-  "candidates": 152,
-  "published": 4,
+  "excluded_ru": 63,
+  "candidates": 209,
+  "published": 2,
   "nodes": [
     {
-      "source": "igareck_mobile_regular",
-      "node_id": "e9a4ccb5b9e4",
-      "host": "132.243.228.209",
+      "source": "igareck_sni_whitelist",
+      "node_id": "6b96eb3647ba",
+      "host": "fi.routeliora.ru",
       "port": 8443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
-      "country": "DE",
-      "tcp_ms": 89.9,
+      "original_name": ".𖥔 ݁ ˖ִ🛸༄˖°. | [SNI-RU] dzen.ru",
+      "country": "FI",
+      "tcp_ms": 139.6,
       "proxy_ms": null,
-      "speed_mbps": 5.26,
-      "live_ms": 825.5,
+      "speed_mbps": 3.27,
+      "live_ms": 1015.2,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,23 +68,23 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 91.14,
+      "score": 90.56,
       "errors": [],
-      "display_name": "🇩🇪 DE · #01 · 826ms · 5Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇫🇮 FI · #01 · 1015ms · 3Mbps · Reality · RU-LTE·SNI"
     },
     {
-      "source": "igareck_mobile_regular",
-      "node_id": "b3c9b643dfdb",
-      "host": "173.249.200.123",
-      "port": 443,
+      "source": "igareck_sni_whitelist",
+      "node_id": "ad62aa877bde",
+      "host": "141.0.184.240",
+      "port": 8443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇺🇸 United States, San Jose | [BL]",
-      "country": "US",
-      "tcp_ms": 63.5,
+      "original_name": ".𖥔 ݁ ˖ִ🛸༄˖°. | [SNI-RU] dzen.ru",
+      "country": "FI",
+      "tcp_ms": 120.4,
       "proxy_ms": null,
-      "speed_mbps": 3.84,
-      "live_ms": 1376.7,
+      "speed_mbps": 3.27,
+      "live_ms": 1031.8,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -92,57 +92,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 83.42,
+      "score": 90.34,
       "errors": [],
-      "display_name": "🇺🇸 US · #02 · 1377ms · 4Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "f5c1d1169cb5",
-      "host": "91.193.17.234",
-      "port": 9460,
-      "security": "reality",
-      "transport": "grpc",
-      "original_name": "🇺🇸 United States, Ashburn | [BL]",
-      "country": "GB",
-      "tcp_ms": 88.2,
-      "proxy_ms": null,
-      "speed_mbps": 3.82,
-      "live_ms": 2448.8,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 69.12,
-      "errors": [],
-      "display_name": "🇬🇧 GB · #03 · 2449ms · 4Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_whitelist",
-      "node_id": "b84fa6ef2827",
-      "host": "fast48.slopllex.app",
-      "port": 443,
-      "security": "tls",
-      "transport": "tcp",
-      "original_name": ".𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR]",
-      "country": "BR",
-      "tcp_ms": 133.0,
-      "proxy_ms": null,
-      "speed_mbps": 3.92,
-      "live_ms": 2637.5,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 65.13,
-      "errors": [],
-      "display_name": "🇧🇷 BR · #04 · 2638ms · 4Mbps · TLS · RU-LTE·Whitelist"
+      "display_name": "🇫🇮 FI · #02 · 1032ms · 3Mbps · Reality · RU-LTE·SNI"
     }
   ]
 }
