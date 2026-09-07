@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-07T15:51:09.375299+00:00",
+  "generated_at": "2026-09-07T19:57:09.389148+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -28,39 +28,39 @@
       "accepted": 20
     },
     "igareck_sni_whitelist": {
-      "fetched": 10,
-      "accepted": 10
+      "fetched": 5,
+      "accepted": 5
     },
     "vsv_mobile_whitelist": {
-      "fetched": 20,
-      "accepted": 20
+      "fetched": 16,
+      "accepted": 16
     },
     "igareck_mobile_regular": {
-      "fetched": 21,
-      "accepted": 21
+      "fetched": 84,
+      "accepted": 84
     },
     "aviamasters_ru": {
       "fetched": 20,
       "accepted": 20
     }
   },
-  "excluded_ru": 87,
-  "candidates": 126,
+  "excluded_ru": 73,
+  "candidates": 199,
   "published": 1,
   "nodes": [
     {
-      "source": "igareck_mobile_whitelist",
-      "node_id": "aa2c5a7f1bce",
-      "host": "83.147.255.88",
+      "source": "aetris_mobile_whitelist",
+      "node_id": "59bccd97fb79",
+      "host": "162.159.254.3",
       "port": 443,
       "security": "tls",
       "transport": "ws",
-      "original_name": "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇳🇱 🇸🇪 🇹🇼 | [*CIDR]",
-      "country": "DE",
-      "tcp_ms": 185.6,
+      "original_name": "🇯🇵 AetrisVPN",
+      "country": "US",
+      "tcp_ms": 12.1,
       "proxy_ms": null,
-      "speed_mbps": 3.01,
-      "live_ms": 1268.4,
+      "speed_mbps": 1.67,
+      "live_ms": 4245.2,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 83.09,
+      "score": 59.92,
       "errors": [],
-      "display_name": "🇩🇪 DE · #01 · 1268ms · 3Mbps · TLS · RU-LTE·Whitelist"
+      "display_name": "🇺🇸 US · #01 · 4245ms · 2Mbps · TLS · RU-LTE·Aetris"
     }
   ]
 }
