@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-07T19:57:09.389148+00:00",
+  "generated_at": "2026-09-07T22:49:06.872883+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,34 +20,106 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 20,
-      "accepted": 20
+      "fetched": 51,
+      "accepted": 41
     },
     "igareck_cidr_whitelist": {
-      "fetched": 20,
-      "accepted": 20
+      "fetched": 51,
+      "accepted": 47
     },
     "igareck_sni_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 6,
+      "accepted": 6
     },
     "vsv_mobile_whitelist": {
       "fetched": 16,
-      "accepted": 16
+      "accepted": 10
     },
     "igareck_mobile_regular": {
-      "fetched": 84,
-      "accepted": 84
+      "fetched": 18,
+      "accepted": 16
     },
     "aviamasters_ru": {
-      "fetched": 20,
-      "accepted": 20
+      "fetched": 10,
+      "accepted": 10
     }
   },
-  "excluded_ru": 73,
-  "candidates": 199,
-  "published": 1,
+  "excluded_ru": 110,
+  "candidates": 131,
+  "published": 5,
   "nodes": [
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "9c36c309ee91",
+      "host": "89.105.206.122",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "country": "NL",
+      "tcp_ms": 145.4,
+      "proxy_ms": null,
+      "speed_mbps": 4.41,
+      "live_ms": 672.0,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 92.98,
+      "errors": [],
+      "display_name": "🇳🇱 NL · #01 · 672ms · 4Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "a2855c7172b7",
+      "host": "eu-west-nl-1.hanvpn.biz",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇳🇱 The Netherlands, Oude Meer | 🌐 | [BL]",
+      "country": "NL",
+      "tcp_ms": 150.5,
+      "proxy_ms": null,
+      "speed_mbps": 4.31,
+      "live_ms": 766.0,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 91.7,
+      "errors": [],
+      "display_name": "🇳🇱 NL · #02 · 766ms · 4Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "aetris_mobile_whitelist",
+      "node_id": "5061d6fc3fe6",
+      "host": "34.222.2.182",
+      "port": 50159,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇺🇸 AetrisVPN",
+      "country": "US",
+      "tcp_ms": 19.7,
+      "proxy_ms": null,
+      "speed_mbps": 2.15,
+      "live_ms": 1029.0,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 91.44,
+      "errors": [],
+      "display_name": "🇺🇸 US · #03 · 1029ms · 2Mbps · Reality · RU-LTE·Aetris"
+    },
     {
       "source": "aetris_mobile_whitelist",
       "node_id": "59bccd97fb79",
@@ -57,10 +129,10 @@
       "transport": "ws",
       "original_name": "🇯🇵 AetrisVPN",
       "country": "US",
-      "tcp_ms": 12.1,
+      "tcp_ms": 13.3,
       "proxy_ms": null,
-      "speed_mbps": 1.67,
-      "live_ms": 4245.2,
+      "speed_mbps": 2.74,
+      "live_ms": 1648.2,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +140,33 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 59.92,
+      "score": 78.43,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 4245ms · 2Mbps · TLS · RU-LTE·Aetris"
+      "display_name": "🇺🇸 US · #04 · 1648ms · 3Mbps · TLS · RU-LTE·Aetris"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "0e0ef8689a89",
+      "host": "151.242.168.125",
+      "port": 390,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇳🇴 Norway, Sandefjord | [BL]",
+      "country": "NO",
+      "tcp_ms": 158.9,
+      "proxy_ms": null,
+      "speed_mbps": 1.33,
+      "live_ms": 2863.7,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 62.54,
+      "errors": [],
+      "display_name": "🇳🇴 NO · #05 · 2864ms · 1Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
