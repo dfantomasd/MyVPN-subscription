@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-08T15:06:26.454773+00:00",
+  "generated_at": "2026-09-08T21:49:58.173601+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 35,
-      "accepted": 35
+      "fetched": 76,
+      "accepted": 76
     },
     "igareck_cidr_whitelist": {
-      "fetched": 35,
-      "accepted": 35
+      "fetched": 76,
+      "accepted": 76
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 10,
-      "accepted": 10
+      "fetched": 20,
+      "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 92,
-      "accepted": 84
+      "fetched": 66,
+      "accepted": 63
     },
     "aviamasters_ru": {
-      "fetched": 35,
-      "accepted": 35
+      "fetched": 59,
+      "accepted": 50
     }
   },
-  "excluded_ru": 123,
-  "candidates": 188,
-  "published": 1,
+  "excluded_ru": 237,
+  "candidates": 160,
+  "published": 2,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "9d431a479ca6",
-      "host": "152.232.57.100",
+      "node_id": "9eb453f07305",
+      "host": "eu-west-nl-2.hanvpn.biz",
       "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇺🇸 United States, Los Angeles | [BL]",
-      "country": "US",
-      "tcp_ms": 9.4,
+      "original_name": "🇳🇱 The Netherlands, Eygelshoven | [BL]",
+      "country": "NL",
+      "tcp_ms": 108.6,
       "proxy_ms": null,
-      "speed_mbps": 5.85,
-      "live_ms": 590.8,
+      "speed_mbps": 6.98,
+      "live_ms": 474.4,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,33 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 94.4,
+      "score": 96.17,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 591ms · 6Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇳🇱 NL · #01 · 474ms · 7Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "3483bec773d8",
+      "host": "eu-north-sw-1.hanvpn.biz",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇸🇪 Sweden, Stockholm | [BL]",
+      "country": "DE",
+      "tcp_ms": 117.5,
+      "proxy_ms": null,
+      "speed_mbps": 4.08,
+      "live_ms": 873.3,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 90.2,
+      "errors": [],
+      "display_name": "🇩🇪 DE · #02 · 873ms · 4Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
