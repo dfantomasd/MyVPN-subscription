@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-09T04:37:58.599608+00:00",
+  "generated_at": "2026-09-09T21:40:54.479235+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,95 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 123,
-      "accepted": 121
-    },
-    "igareck_cidr_whitelist": {
-      "fetched": 123,
-      "accepted": 121
-    },
-    "igareck_sni_whitelist": {
-      "fetched": 2,
-      "accepted": 2
-    },
-    "vsv_mobile_whitelist": {
-      "fetched": 20,
+      "fetched": 45,
       "accepted": 20
     },
+    "igareck_cidr_whitelist": {
+      "fetched": 45,
+      "accepted": 20
+    },
+    "igareck_sni_whitelist": {
+      "fetched": 0,
+      "accepted": 0
+    },
+    "vsv_mobile_whitelist": {
+      "fetched": 15,
+      "accepted": 15
+    },
     "igareck_mobile_regular": {
-      "fetched": 92,
-      "accepted": 76
+      "fetched": 5,
+      "accepted": 5
     },
     "aviamasters_ru": {
-      "fetched": 123,
-      "accepted": 121
+      "fetched": 20,
+      "accepted": 20
     }
   },
-  "excluded_ru": 387,
-  "candidates": 180,
-  "published": 3,
+  "excluded_ru": 76,
+  "candidates": 116,
+  "published": 2,
   "nodes": [
     {
-      "source": "aetris_mobile_whitelist",
-      "node_id": "2b22d1ae4790",
-      "host": "8.39.125.152",
-      "port": 8443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇷🇺 AetrisVPN",
-      "country": "US",
-      "tcp_ms": 16.0,
-      "proxy_ms": null,
-      "speed_mbps": 5.47,
-      "live_ms": 765.2,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 90.99,
-      "errors": [],
-      "display_name": "🇺🇸 US · #01 · 765ms · 5Mbps · TLS · RU-LTE·Aetris"
-    },
-    {
-      "source": "aetris_mobile_whitelist",
-      "node_id": "f48b7527410f",
-      "host": "104.26.13.142",
-      "port": 2083,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇸🇪 AetrisVPN",
-      "country": "CA",
-      "tcp_ms": 16.3,
-      "proxy_ms": null,
-      "speed_mbps": 4.99,
-      "live_ms": 1029.7,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 87.35,
-      "errors": [],
-      "display_name": "🇨🇦 CA · #02 · 1030ms · 5Mbps · TLS · RU-LTE·Aetris"
-    },
-    {
-      "source": "aetris_mobile_whitelist",
-      "node_id": "59bccd97fb79",
-      "host": "162.159.254.3",
+      "source": "igareck_mobile_regular",
+      "node_id": "c5c84534c58d",
+      "host": "50.7.249.170",
       "port": 443,
       "security": "tls",
-      "transport": "ws",
-      "original_name": "🇯🇵 AetrisVPN",
-      "country": "US",
-      "tcp_ms": 12.8,
+      "transport": "tcp",
+      "original_name": "🇵🇱 Poland, Warsaw | [BL]",
+      "country": "PL",
+      "tcp_ms": 112.7,
       "proxy_ms": null,
-      "speed_mbps": 2.66,
-      "live_ms": 1769.5,
+      "speed_mbps": 5.52,
+      "live_ms": 591.8,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -116,9 +68,33 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 76.78,
+      "score": 89.31,
       "errors": [],
-      "display_name": "🇺🇸 US · #03 · 1770ms · 3Mbps · TLS · RU-LTE·Aetris"
+      "display_name": "🇵🇱 PL · #01 · 592ms · 6Mbps · TLS · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "f4d98d048722",
+      "host": "freshjuniper.download",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇯🇵 Japan, Shibuya City | 🌐 | [BL]",
+      "country": "HK",
+      "tcp_ms": 136.2,
+      "proxy_ms": null,
+      "speed_mbps": 2.82,
+      "live_ms": 1680.5,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 79.03,
+      "errors": [],
+      "display_name": "🇭🇰 HK · #02 · 1680ms · 3Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
