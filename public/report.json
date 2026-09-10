@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-10T14:24:45.395321+00:00",
+  "generated_at": "2026-09-10T18:25:39.580501+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 65,
+      "accepted": 65
     },
     "igareck_cidr_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 65,
+      "accepted": 65
     },
     "igareck_sni_whitelist": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 90,
+      "accepted": 90
     },
     "vsv_mobile_whitelist": {
-      "fetched": 3,
-      "accepted": 3
+      "fetched": 7,
+      "accepted": 7
     },
     "igareck_mobile_regular": {
-      "fetched": 42,
-      "accepted": 42
+      "fetched": 109,
+      "accepted": 106
     },
     "aviamasters_ru": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 25,
+      "accepted": 25
     }
   },
-  "excluded_ru": 15,
-  "candidates": 152,
-  "published": 1,
+  "excluded_ru": 164,
+  "candidates": 297,
+  "published": 4,
   "nodes": [
     {
-      "source": "igareck_mobile_regular",
-      "node_id": "5ad1ed51d550",
-      "host": "freshjuniper.download",
+      "source": "igareck_sni_whitelist",
+      "node_id": "3ac96533afea",
+      "host": "37.49.228.56",
       "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇯🇵 Japan, Shibuya City | 🌐 | [BL]",
-      "country": "HK",
-      "tcp_ms": 110.1,
+      "original_name": "🇳🇱 The Netherlands | [SNI-RU] start.ru",
+      "country": "NL",
+      "tcp_ms": 89.0,
       "proxy_ms": null,
-      "speed_mbps": 2.85,
-      "live_ms": 1314.2,
+      "speed_mbps": 6.82,
+      "live_ms": 601.1,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,81 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 83.92,
+      "score": 96.95,
       "errors": [],
-      "display_name": "🇭🇰 HK · #01 · 1314ms · 3Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇳🇱 NL · #01 · 601ms · 7Mbps · Reality · RU-LTE·SNI"
+    },
+    {
+      "source": "igareck_sni_whitelist",
+      "node_id": "1c6b28f7ac89",
+      "host": "194.76.154.192",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇫🇷 France | [SNI-RU] start.ru",
+      "country": "FR",
+      "tcp_ms": 81.6,
+      "proxy_ms": null,
+      "speed_mbps": 7.38,
+      "live_ms": 4106.3,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 65.07,
+      "errors": [],
+      "display_name": "🇫🇷 FR · #02 · 4106ms · 7Mbps · Reality · RU-LTE·SNI"
+    },
+    {
+      "source": "igareck_sni_whitelist",
+      "node_id": "3d0f4b63411d",
+      "host": "37.49.227.198",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇳🇱 The Netherlands | [SNI-RU] start.ru",
+      "country": "NL",
+      "tcp_ms": 89.3,
+      "proxy_ms": null,
+      "speed_mbps": 3.61,
+      "live_ms": 5454.0,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 64.2,
+      "errors": [],
+      "display_name": "🇳🇱 NL · #03 · 5454ms · 4Mbps · Reality · RU-LTE·SNI"
+    },
+    {
+      "source": "igareck_sni_whitelist",
+      "node_id": "1d78e62b5f9b",
+      "host": "37.49.226.234",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇳🇱 The Netherlands | [SNI-RU] start.ru",
+      "country": "NL",
+      "tcp_ms": 88.8,
+      "proxy_ms": null,
+      "speed_mbps": 1.5,
+      "live_ms": 5463.5,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 63.32,
+      "errors": [],
+      "display_name": "🇳🇱 NL · #04 · 5464ms · 2Mbps · Reality · RU-LTE·SNI"
     }
   ]
 }
