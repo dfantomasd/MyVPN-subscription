@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-10T18:25:39.580501+00:00",
+  "generated_at": "2026-09-10T21:37:00.427367+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 65,
-      "accepted": 65
+      "fetched": 60,
+      "accepted": 60
     },
     "igareck_cidr_whitelist": {
-      "fetched": 65,
-      "accepted": 65
+      "fetched": 60,
+      "accepted": 60
     },
     "igareck_sni_whitelist": {
-      "fetched": 90,
-      "accepted": 90
+      "fetched": 26,
+      "accepted": 26
     },
     "vsv_mobile_whitelist": {
-      "fetched": 7,
-      "accepted": 7
+      "fetched": 20,
+      "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 109,
-      "accepted": 106
+      "fetched": 22,
+      "accepted": 22
     },
     "aviamasters_ru": {
-      "fetched": 25,
-      "accepted": 25
+      "fetched": 60,
+      "accepted": 60
     }
   },
-  "excluded_ru": 164,
-  "candidates": 297,
+  "excluded_ru": 202,
+  "candidates": 153,
   "published": 4,
   "nodes": [
     {
       "source": "igareck_sni_whitelist",
-      "node_id": "3ac96533afea",
-      "host": "37.49.228.56",
-      "port": 443,
+      "node_id": "bdcd4e0b4d0c",
+      "host": "195.66.24.173",
+      "port": 1932,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇳🇱 The Netherlands | [SNI-RU] start.ru",
-      "country": "NL",
-      "tcp_ms": 89.0,
+      "original_name": "🇩🇪 Germany | 🌐 [SNI-RU] www.vk.com",
+      "country": "DE",
+      "tcp_ms": 152.6,
       "proxy_ms": null,
-      "speed_mbps": 6.82,
-      "live_ms": 601.1,
+      "speed_mbps": 4.02,
+      "live_ms": 894.5,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,23 +68,23 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 96.95,
+      "score": 92.4,
       "errors": [],
-      "display_name": "🇳🇱 NL · #01 · 601ms · 7Mbps · Reality · RU-LTE·SNI"
+      "display_name": "🇩🇪 DE · #01 · 894ms · 4Mbps · Reality · RU-LTE·SNI"
     },
     {
       "source": "igareck_sni_whitelist",
-      "node_id": "1c6b28f7ac89",
-      "host": "194.76.154.192",
-      "port": 443,
+      "node_id": "2ba8b9cd5255",
+      "host": "195.66.24.169",
+      "port": 1932,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇫🇷 France | [SNI-RU] start.ru",
-      "country": "FR",
-      "tcp_ms": 81.6,
+      "original_name": "🇩🇪 Germany | 🌐 | [SNI-RU] www.vk.com",
+      "country": "DE",
+      "tcp_ms": 149.4,
       "proxy_ms": null,
-      "speed_mbps": 7.38,
-      "live_ms": 4106.3,
+      "speed_mbps": 3.96,
+      "live_ms": 896.5,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -92,23 +92,23 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 65.07,
+      "score": 92.36,
       "errors": [],
-      "display_name": "🇫🇷 FR · #02 · 4106ms · 7Mbps · Reality · RU-LTE·SNI"
+      "display_name": "🇩🇪 DE · #02 · 896ms · 4Mbps · Reality · RU-LTE·SNI"
     },
     {
       "source": "igareck_sni_whitelist",
-      "node_id": "3d0f4b63411d",
-      "host": "37.49.227.198",
+      "node_id": "e35e800c83ce",
+      "host": "195.66.24.171",
       "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇳🇱 The Netherlands | [SNI-RU] start.ru",
-      "country": "NL",
-      "tcp_ms": 89.3,
+      "original_name": "🇩🇪 Germany | 🌐 | [SNI-RU] www.vk.com",
+      "country": "DE",
+      "tcp_ms": 154.3,
       "proxy_ms": null,
-      "speed_mbps": 3.61,
-      "live_ms": 5454.0,
+      "speed_mbps": 3.89,
+      "live_ms": 944.6,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -116,23 +116,23 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 64.2,
+      "score": 91.7,
       "errors": [],
-      "display_name": "🇳🇱 NL · #03 · 5454ms · 4Mbps · Reality · RU-LTE·SNI"
+      "display_name": "🇩🇪 DE · #03 · 945ms · 4Mbps · Reality · RU-LTE·SNI"
     },
     {
       "source": "igareck_sni_whitelist",
-      "node_id": "1d78e62b5f9b",
-      "host": "37.49.226.234",
+      "node_id": "fa59130669b1",
+      "host": "195.66.24.174",
       "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇳🇱 The Netherlands | [SNI-RU] start.ru",
-      "country": "NL",
-      "tcp_ms": 88.8,
+      "original_name": ".𖥔 ݁ ˖ִ🛸༄˖°. | [SNI-RU] www.vk.com",
+      "country": "DE",
+      "tcp_ms": 150.1,
       "proxy_ms": null,
-      "speed_mbps": 1.5,
-      "live_ms": 5463.5,
+      "speed_mbps": 3.77,
+      "live_ms": 952.0,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -140,9 +140,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 63.32,
+      "score": 91.56,
       "errors": [],
-      "display_name": "🇳🇱 NL · #04 · 5464ms · 2Mbps · Reality · RU-LTE·SNI"
+      "display_name": "🇩🇪 DE · #04 · 952ms · 4Mbps · Reality · RU-LTE·SNI"
     }
   ]
 }
