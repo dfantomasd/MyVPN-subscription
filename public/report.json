@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-10T09:41:18.482806+00:00",
+  "generated_at": "2026-09-10T14:24:45.395321+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 5,
+      "accepted": 5
     },
     "igareck_cidr_whitelist": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 5,
+      "accepted": 5
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 12,
-      "accepted": 11
+      "fetched": 3,
+      "accepted": 3
     },
     "igareck_mobile_regular": {
-      "fetched": 49,
-      "accepted": 49
+      "fetched": 42,
+      "accepted": 42
     },
     "aviamasters_ru": {
       "fetched": 0,
       "accepted": 0
     }
   },
-  "excluded_ru": 13,
-  "candidates": 159,
+  "excluded_ru": 15,
+  "candidates": 152,
   "published": 1,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "4cdf615bf50e",
-      "host": "185.218.16.145",
+      "node_id": "5ad1ed51d550",
+      "host": "freshjuniper.download",
       "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇺🇸 United States, Fremont | [BL]",
-      "country": "US",
-      "tcp_ms": 31.7,
+      "original_name": "🇯🇵 Japan, Shibuya City | 🌐 | [BL]",
+      "country": "HK",
+      "tcp_ms": 110.1,
       "proxy_ms": null,
-      "speed_mbps": 3.96,
-      "live_ms": 770.5,
+      "speed_mbps": 2.85,
+      "live_ms": 1314.2,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 91.54,
+      "score": 83.92,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 770ms · 4Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇭🇰 HK · #01 · 1314ms · 3Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
