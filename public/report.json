@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-12T16:18:06.507804+00:00",
+  "generated_at": "2026-09-12T19:18:47.320310+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,12 +20,12 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 75,
-      "accepted": 75
+      "fetched": 65,
+      "accepted": 65
     },
     "igareck_cidr_whitelist": {
-      "fetched": 75,
-      "accepted": 75
+      "fetched": 65,
+      "accepted": 65
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
@@ -36,31 +36,55 @@
       "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 113,
-      "accepted": 112
+      "fetched": 59,
+      "accepted": 59
     },
     "aviamasters_ru": {
-      "fetched": 85,
-      "accepted": 85
+      "fetched": 65,
+      "accepted": 65
     }
   },
-  "excluded_ru": 266,
-  "candidates": 213,
+  "excluded_ru": 197,
+  "candidates": 189,
   "published": 3,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "c7400a795569",
+      "node_id": "ae19bfa06b00",
+      "host": "172.96.141.210",
+      "port": 8443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇺🇸 United States, Los Angeles | 🌐 | [BL]",
+      "country": "US",
+      "tcp_ms": 12.9,
+      "proxy_ms": null,
+      "speed_mbps": 5.41,
+      "live_ms": 669.4,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 93.25,
+      "errors": [],
+      "display_name": "🇺🇸 US · #01 · 669ms · 5Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "a66bbef30846",
       "host": "147.78.182.3",
       "port": 8443,
       "security": "reality",
       "transport": "grpc",
       "original_name": "🇺🇸 United States, New York | [BL]",
       "country": "US",
-      "tcp_ms": 13.8,
+      "tcp_ms": 78.2,
       "proxy_ms": null,
-      "speed_mbps": 5.89,
-      "live_ms": 659.1,
+      "speed_mbps": 6.12,
+      "live_ms": 717.9,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,23 +92,23 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 93.5,
+      "score": 92.76,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 659ms · 6Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #02 · 718ms · 6Mbps · Reality · RU-Mobile·Regular"
     },
     {
       "source": "igareck_mobile_regular",
-      "node_id": "98d39e38d0a5",
+      "node_id": "d00487966960",
       "host": "172.235.38.85",
       "port": 42942,
       "security": "reality",
       "transport": "tcp",
       "original_name": "🇺🇸 United States, Los Angeles | 🌐 | [BL]",
       "country": "US",
-      "tcp_ms": 58.8,
+      "tcp_ms": 10.8,
       "proxy_ms": null,
-      "speed_mbps": 4.62,
-      "live_ms": 836.9,
+      "speed_mbps": 4.02,
+      "live_ms": 1018.0,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -92,33 +116,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 90.83,
+      "score": 88.25,
       "errors": [],
-      "display_name": "🇺🇸 US · #02 · 837ms · 5Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "fb5da3d3c5b3",
-      "host": "31.76.54.56",
-      "port": 6443,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
-      "country": "DE",
-      "tcp_ms": 91.5,
-      "proxy_ms": null,
-      "speed_mbps": 3.9,
-      "live_ms": 4672.0,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 61.79,
-      "errors": [],
-      "display_name": "🇩🇪 DE · #03 · 4672ms · 4Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #03 · 1018ms · 4Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
