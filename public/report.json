@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-13T18:10:51.129946+00:00",
+  "generated_at": "2026-09-13T20:47:03.363864+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,12 +20,12 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 78,
-      "accepted": 78
+      "fetched": 77,
+      "accepted": 77
     },
     "igareck_cidr_whitelist": {
-      "fetched": 78,
-      "accepted": 78
+      "fetched": 77,
+      "accepted": 77
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
@@ -36,55 +36,31 @@
       "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 58,
-      "accepted": 58
+      "fetched": 84,
+      "accepted": 82
     },
     "aviamasters_ru": {
-      "fetched": 59,
-      "accepted": 59
+      "fetched": 77,
+      "accepted": 77
     }
   },
-  "excluded_ru": 244,
-  "candidates": 161,
-  "published": 2,
+  "excluded_ru": 260,
+  "candidates": 185,
+  "published": 1,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "d00487966960",
-      "host": "172.235.38.85",
-      "port": 42942,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇺🇸 United States, Los Angeles | [BL]",
-      "country": "US",
-      "tcp_ms": 9.3,
-      "proxy_ms": null,
-      "speed_mbps": 5.44,
-      "live_ms": 682.8,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 93.08,
-      "errors": [],
-      "display_name": "🇺🇸 US · #01 · 683ms · 5Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "78d39b49c783",
-      "host": "140.235.168.2",
+      "node_id": "ec6681ff7eae",
+      "host": "147.78.182.3",
       "port": 8443,
       "security": "reality",
       "transport": "grpc",
-      "original_name": "🇺🇸 United States, Tukwila | [BL]",
+      "original_name": "🇺🇸 United States, New York | [BL]",
       "country": "US",
-      "tcp_ms": 21.7,
+      "tcp_ms": 9.1,
       "proxy_ms": null,
-      "speed_mbps": 5.54,
-      "live_ms": 691.5,
+      "speed_mbps": 9.8,
+      "live_ms": 431.5,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -92,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 92.99,
+      "score": 97.18,
       "errors": [],
-      "display_name": "🇺🇸 US · #02 · 692ms · 6Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 432ms · 10Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
