@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-15T18:10:48.664496+00:00",
+  "generated_at": "2026-09-15T21:17:59.516776+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 50,
+      "accepted": 50
     },
     "igareck_cidr_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 50,
+      "accepted": 50
     },
     "igareck_sni_whitelist": {
-      "fetched": 5,
+      "fetched": 7,
       "accepted": 5
     },
     "vsv_mobile_whitelist": {
-      "fetched": 20,
-      "accepted": 20
+      "fetched": 18,
+      "accepted": 18
     },
     "igareck_mobile_regular": {
-      "fetched": 62,
-      "accepted": 61
+      "fetched": 55,
+      "accepted": 52
     },
     "aviamasters_ru": {
-      "fetched": 40,
-      "accepted": 40
+      "fetched": 20,
+      "accepted": 20
     }
   },
-  "excluded_ru": 72,
-  "candidates": 176,
-  "published": 1,
+  "excluded_ru": 140,
+  "candidates": 167,
+  "published": 3,
   "nodes": [
     {
-      "source": "igareck_sni_whitelist",
-      "node_id": "9b924ad357a6",
-      "host": "146.103.100.242",
-      "port": 443,
+      "source": "igareck_mobile_regular",
+      "node_id": "57139a67c6ad",
+      "host": "172.235.38.85",
+      "port": 42942,
       "security": "reality",
       "transport": "tcp",
-      "original_name": ".𖥔 ݁ ˖ִ🛸༄˖°. | [SNI-RU] dzen.ru",
-      "country": "NL",
-      "tcp_ms": 220.4,
+      "original_name": "🌐 Anycast-IP | 🇺🇸 | [BL]",
+      "country": "US",
+      "tcp_ms": 29.7,
       "proxy_ms": null,
-      "speed_mbps": 1.23,
-      "live_ms": 2640.3,
+      "speed_mbps": 5.19,
+      "live_ms": 797.5,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,57 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 67.95,
+      "score": 91.5,
       "errors": [],
-      "display_name": "🇳🇱 NL · #01 · 2640ms · 1Mbps · Reality · RU-LTE·SNI"
+      "display_name": "🇺🇸 US · #01 · 798ms · 5Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "727013a53a28",
+      "host": "172.233.139.46",
+      "port": 53734,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🌐 Anycast-IP | 🇸🇪 🇺🇸 | [BL]",
+      "country": "US",
+      "tcp_ms": 30.0,
+      "proxy_ms": null,
+      "speed_mbps": 5.07,
+      "live_ms": 872.0,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 90.48,
+      "errors": [],
+      "display_name": "🇺🇸 US · #02 · 872ms · 5Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_sni_whitelist",
+      "node_id": "426649d96236",
+      "host": "146.103.100.242",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": ".𖥔 ݁ ˖ִ🛸༄˖°. | [SNI-RU] dzen.ru",
+      "country": "NL",
+      "tcp_ms": 181.0,
+      "proxy_ms": null,
+      "speed_mbps": 1.72,
+      "live_ms": 1237.8,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 86.94,
+      "errors": [],
+      "display_name": "🇳🇱 NL · #03 · 1238ms · 2Mbps · Reality · RU-LTE·SNI"
     }
   ]
 }
