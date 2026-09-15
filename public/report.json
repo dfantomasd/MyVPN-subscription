@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-14T22:28:44.617157+00:00",
+  "generated_at": "2026-09-15T01:26:45.783201+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 65,
-      "accepted": 65
+      "fetched": 91,
+      "accepted": 88
     },
     "igareck_cidr_whitelist": {
-      "fetched": 65,
-      "accepted": 65
+      "fetched": 91,
+      "accepted": 84
     },
     "igareck_sni_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 0,
+      "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 15,
-      "accepted": 5
+      "fetched": 20,
+      "accepted": 19
     },
     "igareck_mobile_regular": {
-      "fetched": 118,
-      "accepted": 113
+      "fetched": 122,
+      "accepted": 117
     },
     "aviamasters_ru": {
-      "fetched": 65,
-      "accepted": 40
+      "fetched": 91,
+      "accepted": 84
     }
   },
-  "excluded_ru": 183,
-  "candidates": 222,
-  "published": 3,
+  "excluded_ru": 278,
+  "candidates": 226,
+  "published": 8,
   "nodes": [
     {
-      "source": "igareck_mobile_regular",
-      "node_id": "3e69717601d4",
-      "host": "47.251.108.158",
-      "port": 443,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇺🇸 United States, Minkler | [BL]",
+      "source": "aetris_mobile_whitelist",
+      "node_id": "2b22d1ae4790",
+      "host": "8.39.125.152",
+      "port": 8443,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇷🇺 AetrisVPN",
       "country": "US",
-      "tcp_ms": 7.0,
+      "tcp_ms": 11.3,
       "proxy_ms": null,
-      "speed_mbps": 5.68,
-      "live_ms": 605.5,
+      "speed_mbps": 7.12,
+      "live_ms": 741.1,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,23 +68,23 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 94.17,
+      "score": 91.64,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 606ms · 6Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 741ms · 7Mbps · TLS · RU-LTE·Aetris"
     },
     {
-      "source": "igareck_mobile_regular",
-      "node_id": "c57d45f8baa0",
-      "host": "172.233.139.46",
-      "port": 53734,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🌐 Anycast-IP | 🇺🇸 | [BL]",
-      "country": "US",
-      "tcp_ms": 8.1,
+      "source": "aetris_mobile_whitelist",
+      "node_id": "8270786d900e",
+      "host": "104.17.222.14",
+      "port": 2053,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇷🇺 AetrisVPN",
+      "country": "CA",
+      "tcp_ms": 12.5,
       "proxy_ms": null,
-      "speed_mbps": 5.56,
-      "live_ms": 652.0,
+      "speed_mbps": 6.8,
+      "live_ms": 739.9,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -92,9 +92,33 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 93.52,
+      "score": 91.6,
       "errors": [],
-      "display_name": "🇺🇸 US · #02 · 652ms · 6Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇨🇦 CA · #02 · 740ms · 7Mbps · TLS · RU-LTE·Aetris"
+    },
+    {
+      "source": "aetris_mobile_whitelist",
+      "node_id": "f48b7527410f",
+      "host": "104.26.13.142",
+      "port": 2083,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇸🇪 AetrisVPN",
+      "country": "CA",
+      "tcp_ms": 14.5,
+      "proxy_ms": null,
+      "speed_mbps": 7.08,
+      "live_ms": 745.7,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 91.57,
+      "errors": [],
+      "display_name": "🇨🇦 CA · #03 · 746ms · 7Mbps · TLS · RU-LTE·Aetris"
     },
     {
       "source": "igareck_mobile_regular",
@@ -103,12 +127,12 @@
       "port": 42942,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇺🇸 United States, Los Angeles | [BL]",
+      "original_name": "🌐 Anycast-IP | 🇺🇸 | [BL]",
       "country": "US",
-      "tcp_ms": 8.3,
+      "tcp_ms": 44.8,
       "proxy_ms": null,
-      "speed_mbps": 5.63,
-      "live_ms": 696.1,
+      "speed_mbps": 4.97,
+      "live_ms": 820.1,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -116,9 +140,105 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 92.95,
+      "score": 91.14,
       "errors": [],
-      "display_name": "🇺🇸 US · #03 · 696ms · 6Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #04 · 820ms · 5Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "ab91e78fb474",
+      "host": "172.233.139.46",
+      "port": 53734,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🌐 Anycast-IP | 🇺🇸 | [BL]",
+      "country": "US",
+      "tcp_ms": 41.6,
+      "proxy_ms": null,
+      "speed_mbps": 4.94,
+      "live_ms": 874.2,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 90.41,
+      "errors": [],
+      "display_name": "🇺🇸 US · #05 · 874ms · 5Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "31106aa53517",
+      "host": "www.wto.org",
+      "port": 443,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇳🇱 🇸🇪 | [BL]",
+      "country": "CA",
+      "tcp_ms": 8.3,
+      "proxy_ms": null,
+      "speed_mbps": 6.41,
+      "live_ms": 744.7,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 87.46,
+      "errors": [],
+      "display_name": "🇨🇦 CA · #06 · 745ms · 6Mbps · TLS · RU-Mobile·Regular"
+    },
+    {
+      "source": "aetris_mobile_whitelist",
+      "node_id": "ec79598b1642",
+      "host": "nahan-core.fatitelegram.workers.dev",
+      "port": 443,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇸🇪 AetrisVPN",
+      "country": "CA",
+      "tcp_ms": 31.2,
+      "proxy_ms": null,
+      "speed_mbps": 5.66,
+      "live_ms": 1127.2,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 86.21,
+      "errors": [],
+      "display_name": "🇨🇦 CA · #07 · 1127ms · 6Mbps · TLS · RU-LTE·Aetris"
+    },
+    {
+      "source": "aetris_mobile_whitelist",
+      "node_id": "27634180b172",
+      "host": "172.67.151.77",
+      "port": 443,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇧🇪 AetrisVPN",
+      "country": "CA",
+      "tcp_ms": 20.3,
+      "proxy_ms": null,
+      "speed_mbps": 5.57,
+      "live_ms": 1275.0,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 84.22,
+      "errors": [],
+      "display_name": "🇨🇦 CA · #08 · 1275ms · 6Mbps · TLS · RU-LTE·Aetris"
     }
   ]
 }
