@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-15T07:41:35.167715+00:00",
+  "generated_at": "2026-09-15T13:31:13.228199+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,12 +20,12 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 0,
+      "accepted": 0
     },
     "igareck_cidr_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 0,
+      "accepted": 0
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
@@ -36,31 +36,31 @@
       "accepted": 5
     },
     "igareck_mobile_regular": {
-      "fetched": 95,
-      "accepted": 91
+      "fetched": 120,
+      "accepted": 119
     },
     "aviamasters_ru": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 0,
+      "accepted": 0
     }
   },
-  "excluded_ru": 22,
-  "candidates": 201,
-  "published": 6,
+  "excluded_ru": 7,
+  "candidates": 229,
+  "published": 1,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "c151c17dd026",
-      "host": "198.46.215.223",
-      "port": 8443,
+      "node_id": "5fb4eb10ee0c",
+      "host": "us-1.gsafevpnapi.com",
+      "port": 20270,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇺🇸 United States, Elk Grove Village | [BL]",
+      "original_name": "🇺🇸 United States, Ashburn | [BL]",
       "country": "US",
-      "tcp_ms": 21.9,
+      "tcp_ms": 29.8,
       "proxy_ms": null,
-      "speed_mbps": 8.09,
-      "live_ms": 529.9,
+      "speed_mbps": 7.57,
+      "live_ms": 470.3,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,129 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 95.62,
+      "score": 96.33,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 530ms · 8Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "aetris_mobile_whitelist",
-      "node_id": "2b22d1ae4790",
-      "host": "8.39.125.152",
-      "port": 8443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇷🇺 AetrisVPN",
-      "country": "US",
-      "tcp_ms": 17.7,
-      "proxy_ms": null,
-      "speed_mbps": 7.06,
-      "live_ms": 626.9,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 93.15,
-      "errors": [],
-      "display_name": "🇺🇸 US · #02 · 627ms · 7Mbps · TLS · RU-LTE·Aetris"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "03be84c76031",
-      "host": "107.189.26.239",
-      "port": 443,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🌐 Anycast-IP | 🇳🇱 | [BL]",
-      "country": "NL",
-      "tcp_ms": 97.5,
-      "proxy_ms": null,
-      "speed_mbps": 5.55,
-      "live_ms": 689.1,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 93.02,
-      "errors": [],
-      "display_name": "🇳🇱 NL · #03 · 689ms · 6Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "7c4f3d18a481",
-      "host": "www.wto.org",
-      "port": 443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🌐 Anycast-IP | 🇨🇦 🇮🇪 🇳🇱 🇺🇸 | [BL]",
-      "country": "CA",
-      "tcp_ms": 41.8,
-      "proxy_ms": null,
-      "speed_mbps": 8.01,
-      "live_ms": 667.1,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 88.78,
-      "errors": [],
-      "display_name": "🇨🇦 CA · #04 · 667ms · 8Mbps · TLS · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "7834771dac4e",
-      "host": "teddy.automizely.com",
-      "port": 443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇮🇪 🇳🇱 🇸🇪 | [BL]",
-      "country": "CA",
-      "tcp_ms": 11.3,
-      "proxy_ms": null,
-      "speed_mbps": 7.17,
-      "live_ms": 697.2,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 88.23,
-      "errors": [],
-      "display_name": "🇨🇦 CA · #05 · 697ms · 7Mbps · TLS · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "82bf7114a527",
-      "host": "nexusmods.com",
-      "port": 443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🌐 Anycast-IP | 🇨🇦 🇩🇪 🇳🇱 🇺🇸 | [BL]",
-      "country": "CA",
-      "tcp_ms": 15.5,
-      "proxy_ms": null,
-      "speed_mbps": 7.58,
-      "live_ms": 813.4,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 86.76,
-      "errors": [],
-      "display_name": "🇨🇦 CA · #06 · 813ms · 8Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 470ms · 8Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
