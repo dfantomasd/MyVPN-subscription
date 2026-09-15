@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-15T13:31:13.228199+00:00",
+  "generated_at": "2026-09-15T18:10:48.664496+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 0,
-      "accepted": 0
-    },
-    "igareck_cidr_whitelist": {
-      "fetched": 0,
-      "accepted": 0
-    },
-    "igareck_sni_whitelist": {
-      "fetched": 0,
-      "accepted": 0
-    },
-    "vsv_mobile_whitelist": {
       "fetched": 5,
       "accepted": 5
     },
+    "igareck_cidr_whitelist": {
+      "fetched": 5,
+      "accepted": 5
+    },
+    "igareck_sni_whitelist": {
+      "fetched": 5,
+      "accepted": 5
+    },
+    "vsv_mobile_whitelist": {
+      "fetched": 20,
+      "accepted": 20
+    },
     "igareck_mobile_regular": {
-      "fetched": 120,
-      "accepted": 119
+      "fetched": 62,
+      "accepted": 61
     },
     "aviamasters_ru": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 40,
+      "accepted": 40
     }
   },
-  "excluded_ru": 7,
-  "candidates": 229,
+  "excluded_ru": 72,
+  "candidates": 176,
   "published": 1,
   "nodes": [
     {
-      "source": "igareck_mobile_regular",
-      "node_id": "5fb4eb10ee0c",
-      "host": "us-1.gsafevpnapi.com",
-      "port": 20270,
+      "source": "igareck_sni_whitelist",
+      "node_id": "9b924ad357a6",
+      "host": "146.103.100.242",
+      "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇺🇸 United States, Ashburn | [BL]",
-      "country": "US",
-      "tcp_ms": 29.8,
+      "original_name": ".𖥔 ݁ ˖ִ🛸༄˖°. | [SNI-RU] dzen.ru",
+      "country": "NL",
+      "tcp_ms": 220.4,
       "proxy_ms": null,
-      "speed_mbps": 7.57,
-      "live_ms": 470.3,
+      "speed_mbps": 1.23,
+      "live_ms": 2640.3,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 96.33,
+      "score": 67.95,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 470ms · 8Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇳🇱 NL · #01 · 2640ms · 1Mbps · Reality · RU-LTE·SNI"
     }
   ]
 }
