@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-16T18:53:15.301208+00:00",
+  "generated_at": "2026-09-16T22:08:44.038736+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 22,
-      "accepted": 22
+      "fetched": 34,
+      "accepted": 34
     },
     "igareck_cidr_whitelist": {
-      "fetched": 22,
-      "accepted": 22
+      "fetched": 34,
+      "accepted": 34
     },
     "igareck_sni_whitelist": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 4,
+      "accepted": 4
     },
     "vsv_mobile_whitelist": {
-      "fetched": 20,
-      "accepted": 15
+      "fetched": 5,
+      "accepted": 5
     },
     "igareck_mobile_regular": {
-      "fetched": 75,
-      "accepted": 72
+      "fetched": 46,
+      "accepted": 46
     },
     "aviamasters_ru": {
-      "fetched": 25,
-      "accepted": 20
+      "fetched": 10,
+      "accepted": 10
     }
   },
-  "excluded_ru": 84,
-  "candidates": 179,
+  "excluded_ru": 85,
+  "candidates": 160,
   "published": 1,
   "nodes": [
     {
-      "source": "igareck_mobile_regular",
-      "node_id": "bc14ae3f3950",
-      "host": "128.254.186.11",
+      "source": "igareck_sni_whitelist",
+      "node_id": "0a548296f8b3",
+      "host": "31.76.111.152",
       "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇦🇪 United Arab Emirates, Dubai | [BL]",
-      "country": "AE",
-      "tcp_ms": 120.2,
+      "original_name": "🇩🇪 Germany | 🌐 | [SNI-RU] ads.x5.ru",
+      "country": "DE",
+      "tcp_ms": 105.2,
       "proxy_ms": null,
-      "speed_mbps": 1.59,
-      "live_ms": 1724.6,
+      "speed_mbps": 5.29,
+      "live_ms": 891.2,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 77.88,
+      "score": 92.77,
       "errors": [],
-      "display_name": "🇦🇪 AE · #01 · 1725ms · 2Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇩🇪 DE · #01 · 891ms · 5Mbps · Reality · RU-LTE·SNI"
     }
   ]
 }
