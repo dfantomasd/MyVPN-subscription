@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-16T09:55:08.869975+00:00",
+  "generated_at": "2026-09-16T14:57:29.122583+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 15,
-      "accepted": 15
+      "fetched": 51,
+      "accepted": 40
     },
     "igareck_cidr_whitelist": {
-      "fetched": 15,
-      "accepted": 15
+      "fetched": 51,
+      "accepted": 40
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 20,
-      "accepted": 14
+      "fetched": 9,
+      "accepted": 8
     },
     "igareck_mobile_regular": {
-      "fetched": 114,
-      "accepted": 114
+      "fetched": 116,
+      "accepted": 115
     },
     "aviamasters_ru": {
-      "fetched": 25,
-      "accepted": 20
+      "fetched": 35,
+      "accepted": 27
     }
   },
-  "excluded_ru": 68,
-  "candidates": 222,
+  "excluded_ru": 117,
+  "candidates": 225,
   "published": 1,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "3673f2093496",
-      "host": "88.216.57.128",
-      "port": 443,
+      "node_id": "92f18daaeb9e",
+      "host": "us-1.gsafevpnapi.com",
+      "port": 20270,
       "security": "reality",
-      "transport": "grpc",
-      "original_name": "🇺🇸 United States, Chicago | [BL]",
+      "transport": "tcp",
+      "original_name": "🌐 Anycast-IP | 🇸🇪 🇺🇸 | [BL]",
       "country": "US",
-      "tcp_ms": 50.3,
+      "tcp_ms": 12.9,
       "proxy_ms": null,
-      "speed_mbps": 7.27,
-      "live_ms": 604.5,
+      "speed_mbps": 8.8,
+      "live_ms": 383.6,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 94.49,
+      "score": 97.68,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 604ms · 7Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 384ms · 9Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
