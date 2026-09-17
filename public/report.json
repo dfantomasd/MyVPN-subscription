@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-17T16:57:50.007718+00:00",
+  "generated_at": "2026-09-17T20:19:09.990409+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,47 +20,47 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 21,
-      "accepted": 16
+      "fetched": 15,
+      "accepted": 10
     },
     "igareck_cidr_whitelist": {
-      "fetched": 21,
-      "accepted": 16
+      "fetched": 15,
+      "accepted": 10
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 16,
+      "fetched": 20,
       "accepted": 15
     },
     "igareck_mobile_regular": {
-      "fetched": 24,
-      "accepted": 24
+      "fetched": 63,
+      "accepted": 63
     },
     "aviamasters_ru": {
-      "fetched": 20,
-      "accepted": 10
+      "fetched": 100,
+      "accepted": 81
     }
   },
-  "excluded_ru": 59,
-  "candidates": 134,
+  "excluded_ru": 118,
+  "candidates": 173,
   "published": 1,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "b6ad497dda73",
-      "host": "144.31.168.59",
-      "port": 443,
+      "node_id": "b278f9ca7ff5",
+      "host": "us-1.gsafevpnapi.com",
+      "port": 20270,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🌐 Anycast-IP | 🇩🇪 🇸🇪 | [BL]",
-      "country": "DE",
-      "tcp_ms": 87.5,
+      "original_name": "🇺🇸 United States, Ashburn | [BL]",
+      "country": "US",
+      "tcp_ms": 57.6,
       "proxy_ms": null,
-      "speed_mbps": 7.28,
-      "live_ms": 438.0,
+      "speed_mbps": 8.31,
+      "live_ms": 457.5,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 96.71,
+      "score": 96.62,
       "errors": [],
-      "display_name": "🇩🇪 DE · #01 · 438ms · 7Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 458ms · 8Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
