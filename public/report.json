@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-17T20:19:09.990409+00:00",
+  "generated_at": "2026-09-17T23:33:14.760311+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,33 +20,33 @@
       "accepted": 112
     },
     "igareck_mobile_whitelist": {
-      "fetched": 15,
-      "accepted": 10
+      "fetched": 28,
+      "accepted": 24
     },
     "igareck_cidr_whitelist": {
-      "fetched": 15,
-      "accepted": 10
+      "fetched": 28,
+      "accepted": 24
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 20,
-      "accepted": 15
+      "fetched": 7,
+      "accepted": 7
     },
     "igareck_mobile_regular": {
-      "fetched": 63,
-      "accepted": 63
+      "fetched": 35,
+      "accepted": 34
     },
     "aviamasters_ru": {
-      "fetched": 100,
-      "accepted": 81
+      "fetched": 28,
+      "accepted": 24
     }
   },
-  "excluded_ru": 118,
-  "candidates": 173,
-  "published": 1,
+  "excluded_ru": 81,
+  "candidates": 144,
+  "published": 3,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
@@ -57,10 +57,10 @@
       "transport": "tcp",
       "original_name": "🇺🇸 United States, Ashburn | [BL]",
       "country": "US",
-      "tcp_ms": 57.6,
+      "tcp_ms": 84.3,
       "proxy_ms": null,
-      "speed_mbps": 8.31,
-      "live_ms": 457.5,
+      "speed_mbps": 5.9,
+      "live_ms": 602.7,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,57 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 96.62,
+      "score": 94.25,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 458ms · 8Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 603ms · 6Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "d00487966960",
+      "host": "172.235.38.85",
+      "port": 42942,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🌐 Anycast-IP | 🇺🇸 | [BL]",
+      "country": "US",
+      "tcp_ms": 9.4,
+      "proxy_ms": null,
+      "speed_mbps": 5.59,
+      "live_ms": 663.6,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 93.37,
+      "errors": [],
+      "display_name": "🇺🇸 US · #02 · 664ms · 6Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "3cdeda685340",
+      "host": "47.80.62.191",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🌐 Anycast-IP | 🇰🇷 | [BL]",
+      "country": "KR",
+      "tcp_ms": 128.6,
+      "proxy_ms": null,
+      "speed_mbps": 1.87,
+      "live_ms": 1621.7,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 79.4,
+      "errors": [],
+      "display_name": "🇰🇷 KR · #03 · 1622ms · 2Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
