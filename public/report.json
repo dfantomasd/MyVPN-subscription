@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-21T17:01:42.465647+00:00",
+  "generated_at": "2026-09-21T21:03:28.336193+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -17,50 +17,50 @@
   "sources": {
     "aetris_mobile_whitelist": {
       "fetched": 68,
-      "accepted": 46
+      "accepted": 47
     },
     "igareck_mobile_whitelist": {
-      "fetched": 21,
-      "accepted": 10
+      "fetched": 11,
+      "accepted": 5
     },
     "igareck_cidr_whitelist": {
-      "fetched": 21,
-      "accepted": 10
+      "fetched": 11,
+      "accepted": 5
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 6,
-      "accepted": 5
+      "fetched": 10,
+      "accepted": 10
     },
     "igareck_mobile_regular": {
-      "fetched": 117,
-      "accepted": 98
+      "fetched": 63,
+      "accepted": 56
     },
     "aviamasters_ru": {
       "fetched": 6,
       "accepted": 5
     }
   },
-  "excluded_ru": 68,
-  "candidates": 106,
+  "excluded_ru": 66,
+  "candidates": 62,
   "published": 1,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "2f62086554b7",
-      "host": "31.76.97.115",
-      "port": 40604,
-      "security": "reality",
-      "transport": "grpc",
-      "original_name": "🇫🇮 Finland, Helsinki | [BL]",
-      "country": "FI",
-      "tcp_ms": 171.7,
+      "node_id": "93c0d59d35d5",
+      "host": "50.7.36.30",
+      "port": 443,
+      "security": "tls",
+      "transport": "tcp",
+      "original_name": ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]",
+      "country": "AT",
+      "tcp_ms": 1153.2,
       "proxy_ms": null,
-      "speed_mbps": 1.15,
-      "live_ms": 2388.0,
+      "speed_mbps": 4.59,
+      "live_ms": 730.4,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 68.76,
+      "score": 87.24,
       "errors": [],
-      "display_name": "🇫🇮 FI · #01 · 2388ms · 1Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇦🇹 AT · #01 · 730ms · 5Mbps · TLS · RU-Mobile·Regular"
     }
   ]
 }
