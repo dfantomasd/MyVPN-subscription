@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-23T11:31:00.499029+00:00",
+  "generated_at": "2026-09-23T16:54:57.986265+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,51 +16,51 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 64,
-      "accepted": 49
+      "fetched": 73,
+      "accepted": 50
     },
     "igareck_mobile_whitelist": {
-      "fetched": 16,
-      "accepted": 16
+      "fetched": 0,
+      "accepted": 0
     },
     "igareck_cidr_whitelist": {
-      "fetched": 16,
-      "accepted": 16
+      "fetched": 0,
+      "accepted": 0
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 20,
-      "accepted": 20
+      "fetched": 11,
+      "accepted": 11
     },
     "igareck_mobile_regular": {
-      "fetched": 100,
-      "accepted": 98
+      "fetched": 64,
+      "accepted": 56
     },
     "aviamasters_ru": {
-      "fetched": 16,
-      "accepted": 16
+      "fetched": 0,
+      "accepted": 0
     }
   },
-  "excluded_ru": 115,
-  "candidates": 100,
+  "excluded_ru": 54,
+  "candidates": 63,
   "published": 2,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "6b03b1ac859a",
-      "host": "os.betust.net",
+      "node_id": "1e31b1ef834e",
+      "host": "sujik.mervi.icu",
       "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇳🇱 The Netherlands, Halfweg | [BL]",
-      "country": "GB",
-      "tcp_ms": 311.8,
+      "original_name": "🇺🇸 United States, Orem | [BL]",
+      "country": "US",
+      "tcp_ms": 1243.7,
       "proxy_ms": null,
-      "speed_mbps": 4.68,
-      "live_ms": 657.8,
+      "speed_mbps": 4.12,
+      "live_ms": 675.3,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,23 +68,23 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 93.24,
+      "score": 92.85,
       "errors": [],
-      "display_name": "🇬🇧 GB · #01 · 658ms · 5Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 675ms · 4Mbps · Reality · RU-Mobile·Regular"
     },
     {
       "source": "igareck_mobile_regular",
-      "node_id": "e22aedfd3e83",
-      "host": "est1.loozerp.wiki",
+      "node_id": "2c9bdd025d20",
+      "host": "tomaz1337shellbuy.vvzzkontaktezzvv.garden",
       "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇪🇪 Estonia, Tallinn | 🌐 | [BL]",
-      "country": "EE",
-      "tcp_ms": 551.3,
+      "original_name": "🇬🇧 United Kingdom, London | [BL]",
+      "country": "GB",
+      "tcp_ms": 283.5,
       "proxy_ms": null,
-      "speed_mbps": 2.11,
-      "live_ms": 1119.7,
+      "speed_mbps": 2.93,
+      "live_ms": 687.7,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -92,9 +92,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 86.21,
+      "score": 92.31,
       "errors": [],
-      "display_name": "🇪🇪 EE · #02 · 1120ms · 2Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇬🇧 GB · #02 · 688ms · 3Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
