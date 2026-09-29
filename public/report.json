@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-29T08:26:32.838189+00:00",
+  "generated_at": "2026-09-29T15:47:40.461820+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,16 +16,16 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 81,
+      "fetched": 84,
       "accepted": 69
     },
     "igareck_mobile_whitelist": {
-      "fetched": 10,
-      "accepted": 10
+      "fetched": 26,
+      "accepted": 20
     },
     "igareck_cidr_whitelist": {
-      "fetched": 10,
-      "accepted": 10
+      "fetched": 26,
+      "accepted": 25
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
@@ -36,31 +36,31 @@
       "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 150,
-      "accepted": 137
+      "fetched": 80,
+      "accepted": 77
     },
     "aviamasters_ru": {
-      "fetched": 31,
-      "accepted": 23
+      "fetched": 15,
+      "accepted": 10
     }
   },
-  "excluded_ru": 122,
-  "candidates": 147,
-  "published": 4,
+  "excluded_ru": 130,
+  "candidates": 91,
+  "published": 2,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "c25d5f86bf55",
-      "host": "195.189.98.4",
+      "node_id": "bfcd05c53d3b",
+      "host": "ooqe994.6551935.xyz",
       "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
-      "country": "NL",
-      "tcp_ms": 89.4,
+      "original_name": "🇮🇹 Italy, Milan | [BL]",
+      "country": "IT",
+      "tcp_ms": 352.8,
       "proxy_ms": null,
-      "speed_mbps": 4.6,
-      "live_ms": 432.0,
+      "speed_mbps": 1.38,
+      "live_ms": 872.1,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,71 +68,23 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 96.23,
+      "score": 89.12,
       "errors": [],
-      "display_name": "🇳🇱 NL · #01 · 432ms · 5Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇮🇹 IT · #01 · 872ms · 1Mbps · Reality · RU-Mobile·Regular"
     },
     {
       "source": "igareck_mobile_regular",
-      "node_id": "e714d2062983",
-      "host": "91.132.160.209",
-      "port": 443,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇩🇪 Germany, Frankfurt am Main (Innenstadt I) | [BL]",
-      "country": "DE",
-      "tcp_ms": 90.3,
-      "proxy_ms": null,
-      "speed_mbps": 4.68,
-      "live_ms": 480.9,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 95.59,
-      "errors": [],
-      "display_name": "🇩🇪 DE · #02 · 481ms · 5Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "609169def100",
-      "host": "64.188.98.179",
+      "node_id": "6f5a9921ddd8",
+      "host": "nlll.gazladder.work",
       "port": 443,
       "security": "reality",
       "transport": "grpc",
-      "original_name": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
-      "country": "DE",
-      "tcp_ms": 94.4,
-      "proxy_ms": null,
-      "speed_mbps": 4.62,
-      "live_ms": 532.2,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 94.89,
-      "errors": [],
-      "display_name": "🇩🇪 DE · #03 · 532ms · 5Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "68fb0d4d648d",
-      "host": "nl-1.omuservice.tech",
-      "port": 8443,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": ".𖥔 ݁ ˖ִ🛸༄˖°. | [BL]",
+      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
       "country": "NL",
-      "tcp_ms": 230.3,
+      "tcp_ms": 273.3,
       "proxy_ms": null,
-      "speed_mbps": 1.6,
-      "live_ms": 4612.3,
+      "speed_mbps": 2.05,
+      "live_ms": 5335.3,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -140,9 +92,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 60.88,
+      "score": 61.11,
       "errors": [],
-      "display_name": "🇳🇱 NL · #04 · 4612ms · 2Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇳🇱 NL · #02 · 5335ms · 2Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
