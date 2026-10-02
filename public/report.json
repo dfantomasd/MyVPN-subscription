@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-02T08:29:12.569792+00:00",
+  "generated_at": "2026-10-02T20:42:36.964363+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,16 +16,16 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 108,
-      "accepted": 86
+      "fetched": 96,
+      "accepted": 77
     },
     "igareck_mobile_whitelist": {
-      "fetched": 57,
-      "accepted": 51
+      "fetched": 104,
+      "accepted": 99
     },
     "igareck_cidr_whitelist": {
-      "fetched": 57,
-      "accepted": 51
+      "fetched": 104,
+      "accepted": 99
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
@@ -36,31 +36,31 @@
       "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 123,
-      "accepted": 119
+      "fetched": 70,
+      "accepted": 70
     },
     "aviamasters_ru": {
-      "fetched": 75,
-      "accepted": 71
+      "fetched": 112,
+      "accepted": 109
     }
   },
-  "excluded_ru": 276,
-  "candidates": 122,
+  "excluded_ru": 392,
+  "candidates": 82,
   "published": 1,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "d3ec94a59662",
-      "host": "34.175.44.113",
-      "port": 443,
+      "node_id": "41973cd3342a",
+      "host": "ee.h1cloud.net",
+      "port": 25895,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇪🇸 Spain, Madrid | [BL]",
-      "country": "ES",
-      "tcp_ms": 78.2,
+      "original_name": "🇪🇪 Estonia, Tallinn | [BL]",
+      "country": "PL",
+      "tcp_ms": 168.0,
       "proxy_ms": null,
-      "speed_mbps": 3.95,
-      "live_ms": 1115.8,
+      "speed_mbps": 2.71,
+      "live_ms": 2428.8,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 86.93,
+      "score": 69.01,
       "errors": [],
-      "display_name": "🇪🇸 ES · #01 · 1116ms · 4Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇵🇱 PL · #01 · 2429ms · 3Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
