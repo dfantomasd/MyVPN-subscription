@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-21T06:00:14.426146+00:00",
+  "generated_at": "2026-10-21T11:43:18.939538+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,123 +16,51 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 25,
+      "accepted": 22
     },
     "igareck_mobile_whitelist": {
-      "fetched": 13,
-      "accepted": 13
+      "fetched": 31,
+      "accepted": 31
     },
     "igareck_cidr_whitelist": {
-      "fetched": 58,
-      "accepted": 58
+      "fetched": 73,
+      "accepted": 73
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 13,
-      "accepted": 13
+      "fetched": 20,
+      "accepted": 20
     },
     "igareck_mobile_regular": {
       "fetched": 55,
       "accepted": 54
     },
     "aviamasters_ru": {
-      "fetched": 58,
-      "accepted": 58
+      "fetched": 73,
+      "accepted": 73
     }
   },
-  "excluded_ru": 144,
-  "candidates": 52,
-  "published": 4,
+  "excluded_ru": 217,
+  "candidates": 56,
+  "published": 3,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "e527172799e9",
-      "host": "8.6.112.0",
-      "port": 443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇫🇷 France | 🌐 | [BL]",
-      "country": "US",
-      "tcp_ms": 4.4,
-      "proxy_ms": null,
-      "speed_mbps": 9.58,
-      "live_ms": 565.4,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 90.36,
-      "errors": [],
-      "display_name": "🇺🇸 US · #01 · 565ms · 10Mbps · TLS · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "c7340f9f775f",
-      "host": "141.193.213.21",
-      "port": 8443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
-      "country": "US",
-      "tcp_ms": 8.0,
-      "proxy_ms": null,
-      "speed_mbps": 2.2,
-      "live_ms": 2223.5,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 66.53,
-      "errors": [],
-      "display_name": "🇺🇸 US · #02 · 2224ms · 2Mbps · TLS · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "5ca135471b41",
-      "host": "news.zoom.us",
-      "port": 8443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
-      "country": "US",
-      "tcp_ms": 7.9,
-      "proxy_ms": null,
-      "speed_mbps": 2.24,
-      "live_ms": 2238.5,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 66.35,
-      "errors": [],
-      "display_name": "🇺🇸 US · #03 · 2238ms · 2Mbps · TLS · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "6efa4d031a0f",
+      "node_id": "16dcaff8a607",
       "host": "141.193.213.20",
       "port": 8443,
       "security": "tls",
       "transport": "ws",
       "original_name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
       "country": "US",
-      "tcp_ms": 5.3,
+      "tcp_ms": 19.1,
       "proxy_ms": null,
-      "speed_mbps": 2.2,
-      "live_ms": 2331.0,
+      "speed_mbps": 2.28,
+      "live_ms": 2032.2,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -140,9 +68,57 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 65.1,
+      "score": 69.12,
       "errors": [],
-      "display_name": "🇺🇸 US · #04 · 2331ms · 2Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 2032ms · 2Mbps · TLS · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "96b477fd61ac",
+      "host": "141.193.213.21",
+      "port": 8443,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+      "country": "US",
+      "tcp_ms": 14.5,
+      "proxy_ms": null,
+      "speed_mbps": 2.12,
+      "live_ms": 2062.0,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 68.65,
+      "errors": [],
+      "display_name": "🇺🇸 US · #02 · 2062ms · 2Mbps · TLS · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "8940bac7b056",
+      "host": "news.zoom.us",
+      "port": 8443,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+      "country": "US",
+      "tcp_ms": 18.4,
+      "proxy_ms": null,
+      "speed_mbps": 2.29,
+      "live_ms": 2071.2,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 68.6,
+      "errors": [],
+      "display_name": "🇺🇸 US · #03 · 2071ms · 2Mbps · TLS · RU-Mobile·Regular"
     }
   ]
 }
