@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-20T22:16:37.026173+00:00",
+  "generated_at": "2026-10-21T00:38:45.016822+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,75 +16,51 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 36,
-      "accepted": 31
+      "fetched": 25,
+      "accepted": 20
     },
     "igareck_mobile_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 18,
+      "accepted": 18
     },
     "igareck_cidr_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 52,
+      "accepted": 52
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 18,
+      "accepted": 18
     },
     "igareck_mobile_regular": {
-      "fetched": 37,
-      "accepted": 37
+      "fetched": 51,
+      "accepted": 49
     },
     "aviamasters_ru": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 61,
+      "accepted": 61
     }
   },
-  "excluded_ru": 36,
-  "candidates": 52,
-  "published": 5,
+  "excluded_ru": 180,
+  "candidates": 38,
+  "published": 4,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "1666db91b39c",
-      "host": "se1.h1cloud.net",
-      "port": 26128,
-      "security": "reality",
-      "transport": "grpc",
-      "original_name": "🇸🇪 Sweden, Älvsjö | [BL]",
-      "country": "SE",
-      "tcp_ms": 129.4,
-      "proxy_ms": null,
-      "speed_mbps": 7.47,
-      "live_ms": 683.8,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 93.47,
-      "errors": [],
-      "display_name": "🇸🇪 SE · #01 · 684ms · 7Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "85b3d0f80468",
-      "host": "uiuxtestdfgh-production.up.railway.app",
+      "node_id": "1fb04359761e",
+      "host": "8.6.112.0",
       "port": 443,
       "security": "tls",
       "transport": "ws",
-      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "original_name": "🇫🇷 France | 🌐 | [BL]",
       "country": "US",
-      "tcp_ms": 99.4,
+      "tcp_ms": 4.4,
       "proxy_ms": null,
-      "speed_mbps": 8.18,
-      "live_ms": 1453.5,
+      "speed_mbps": 9.2,
+      "live_ms": 502.2,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -92,62 +68,38 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 78.32,
+      "score": 91.15,
       "errors": [],
-      "display_name": "🇺🇸 US · #02 · 1454ms · 8Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 502ms · 9Mbps · TLS · RU-Mobile·Regular"
     },
     {
       "source": "igareck_mobile_regular",
-      "node_id": "124b51861b96",
-      "host": "news.zoom.us",
-      "port": 8443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
-      "country": "US",
-      "tcp_ms": 60.9,
-      "proxy_ms": null,
-      "speed_mbps": 2.38,
-      "live_ms": 2068.9,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 68.67,
-      "errors": [],
-      "display_name": "🇺🇸 US · #03 · 2069ms · 2Mbps · TLS · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "e4e1d16cf589",
-      "host": "141.193.213.21",
-      "port": 8443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
-      "country": "US",
-      "tcp_ms": 7.3,
-      "proxy_ms": null,
-      "speed_mbps": 2.41,
-      "live_ms": 2083.7,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 68.49,
-      "errors": [],
-      "display_name": "🇺🇸 US · #04 · 2084ms · 2Mbps · TLS · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "16dcaff8a607",
+      "node_id": "b7453f2cf18d",
       "host": "141.193.213.20",
+      "port": 8443,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+      "country": "US",
+      "tcp_ms": 5.1,
+      "proxy_ms": null,
+      "speed_mbps": 2.07,
+      "live_ms": 2228.6,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 66.4,
+      "errors": [],
+      "display_name": "🇺🇸 US · #02 · 2229ms · 2Mbps · TLS · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "7987d5ac8c51",
+      "host": "news.zoom.us",
       "port": 8443,
       "security": "tls",
       "transport": "ws",
@@ -155,8 +107,8 @@
       "country": "US",
       "tcp_ms": 10.4,
       "proxy_ms": null,
-      "speed_mbps": 2.4,
-      "live_ms": 2112.1,
+      "speed_mbps": 2.17,
+      "live_ms": 2234.9,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -164,9 +116,33 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 68.1,
+      "score": 66.37,
       "errors": [],
-      "display_name": "🇺🇸 US · #05 · 2112ms · 2Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #03 · 2235ms · 2Mbps · TLS · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "a5cc544b65b7",
+      "host": "141.193.213.21",
+      "port": 8443,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
+      "country": "US",
+      "tcp_ms": 3.3,
+      "proxy_ms": null,
+      "speed_mbps": 2.32,
+      "live_ms": 2243.8,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 66.31,
+      "errors": [],
+      "display_name": "🇺🇸 US · #04 · 2244ms · 2Mbps · TLS · RU-Mobile·Regular"
     }
   ]
 }
