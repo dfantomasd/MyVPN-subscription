@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-22T15:14:51.916286+00:00",
+  "generated_at": "2026-10-22T19:13:11.791156+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,75 +16,51 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 44,
-      "accepted": 41
+      "fetched": 27,
+      "accepted": 24
     },
     "igareck_mobile_whitelist": {
-      "fetched": 25,
-      "accepted": 20
+      "fetched": 50,
+      "accepted": 50
     },
     "igareck_cidr_whitelist": {
-      "fetched": 25,
-      "accepted": 20
+      "fetched": 55,
+      "accepted": 55
     },
     "igareck_sni_whitelist": {
       "fetched": 5,
       "accepted": 5
     },
     "vsv_mobile_whitelist": {
-      "fetched": 20,
-      "accepted": 20
+      "fetched": 19,
+      "accepted": 19
     },
     "igareck_mobile_regular": {
-      "fetched": 65,
-      "accepted": 56
+      "fetched": 42,
+      "accepted": 35
     },
     "aviamasters_ru": {
-      "fetched": 25,
-      "accepted": 20
+      "fetched": 55,
+      "accepted": 55
     }
   },
-  "excluded_ru": 132,
-  "candidates": 50,
-  "published": 2,
+  "excluded_ru": 215,
+  "candidates": 28,
+  "published": 1,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "0d0e54ada344",
-      "host": "p2tun0.greewebservices.ir",
-      "port": 28820,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇩🇪 Germany, Nuremberg | [BL]",
-      "country": "IR",
-      "tcp_ms": 362.2,
-      "proxy_ms": null,
-      "speed_mbps": 3.19,
-      "live_ms": 1626.2,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 79.88,
-      "errors": [],
-      "display_name": "🇮🇷 IR · #01 · 1626ms · 3Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "2cac2b0b0f68",
+      "node_id": "9b46b67e88ae",
       "host": "141.193.213.20",
       "port": 8443,
       "security": "tls",
       "transport": "ws",
       "original_name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
       "country": "US",
-      "tcp_ms": 9.6,
+      "tcp_ms": 9.4,
       "proxy_ms": null,
-      "speed_mbps": 1.65,
-      "live_ms": 5371.9,
+      "speed_mbps": 2.12,
+      "live_ms": 1725.3,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -92,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 55.91,
+      "score": 73.14,
       "errors": [],
-      "display_name": "🇺🇸 US · #02 · 5372ms · 2Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 1725ms · 2Mbps · TLS · RU-Mobile·Regular"
     }
   ]
 }
