@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-22T19:13:11.791156+00:00",
+  "generated_at": "2026-10-22T22:18:10.982967+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,38 +16,86 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 27,
-      "accepted": 24
+      "fetched": 29,
+      "accepted": 27
     },
     "igareck_mobile_whitelist": {
       "fetched": 50,
-      "accepted": 50
+      "accepted": 46
     },
     "igareck_cidr_whitelist": {
       "fetched": 55,
-      "accepted": 55
+      "accepted": 46
     },
     "igareck_sni_whitelist": {
-      "fetched": 5,
-      "accepted": 5
+      "fetched": 0,
+      "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 19,
-      "accepted": 19
+      "fetched": 20,
+      "accepted": 17
     },
     "igareck_mobile_regular": {
-      "fetched": 42,
-      "accepted": 35
+      "fetched": 94,
+      "accepted": 80
     },
     "aviamasters_ru": {
       "fetched": 55,
-      "accepted": 55
+      "accepted": 46
     }
   },
-  "excluded_ru": 215,
-  "candidates": 28,
-  "published": 1,
+  "excluded_ru": 200,
+  "candidates": 62,
+  "published": 3,
   "nodes": [
+    {
+      "source": "aetris_mobile_whitelist",
+      "node_id": "62c74f187187",
+      "host": "194.87.29.96",
+      "port": 8443,
+      "security": "reality",
+      "transport": "grpc",
+      "original_name": "🇩🇪 AetrisVPN",
+      "country": "DE",
+      "tcp_ms": 103.8,
+      "proxy_ms": null,
+      "speed_mbps": 12.89,
+      "live_ms": 636.3,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 98.81,
+      "errors": [],
+      "display_name": "🇩🇪 DE · #01 · 636ms · 13Mbps · Reality · RU-LTE·Aetris"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "e088878258b6",
+      "host": "45.85.117.174",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇳🇱 The Netherlands, Meppel | [BL]",
+      "country": "NL",
+      "tcp_ms": 1203.4,
+      "proxy_ms": null,
+      "speed_mbps": 1.3,
+      "live_ms": 1210.6,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 84.56,
+      "errors": [],
+      "display_name": "🇳🇱 NL · #02 · 1211ms · 1Mbps · Reality · RU-Mobile·Regular"
+    },
     {
       "source": "igareck_mobile_regular",
       "node_id": "9b46b67e88ae",
@@ -57,10 +105,10 @@
       "transport": "ws",
       "original_name": "🇸🇬 Singapore, Singapore (Somapah) | 🌐 | [BL]",
       "country": "US",
-      "tcp_ms": 9.4,
+      "tcp_ms": 3.4,
       "proxy_ms": null,
-      "speed_mbps": 2.12,
-      "live_ms": 1725.3,
+      "speed_mbps": 1.45,
+      "live_ms": 2050.7,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +116,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 73.14,
+      "score": 68.45,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 1725ms · 2Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #03 · 2051ms · 1Mbps · TLS · RU-Mobile·Regular"
     }
   ]
 }
