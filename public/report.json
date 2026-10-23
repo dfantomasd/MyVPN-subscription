@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-23T18:17:44.735332+00:00",
+  "generated_at": "2026-10-23T22:07:40.328156+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,51 +16,51 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 28,
-      "accepted": 25
+      "fetched": 31,
+      "accepted": 27
     },
     "igareck_mobile_whitelist": {
-      "fetched": 26,
-      "accepted": 21
+      "fetched": 70,
+      "accepted": 65
     },
     "igareck_cidr_whitelist": {
-      "fetched": 36,
-      "accepted": 25
+      "fetched": 115,
+      "accepted": 110
     },
     "igareck_sni_whitelist": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 5,
+      "accepted": 5
     },
     "vsv_mobile_whitelist": {
-      "fetched": 8,
-      "accepted": 8
+      "fetched": 20,
+      "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 79,
-      "accepted": 48
+      "fetched": 55,
+      "accepted": 40
     },
     "aviamasters_ru": {
-      "fetched": 71,
-      "accepted": 71
+      "fetched": 42,
+      "accepted": 42
     }
   },
-  "excluded_ru": 153,
-  "candidates": 45,
-  "published": 1,
+  "excluded_ru": 270,
+  "candidates": 34,
+  "published": 4,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "32887e1927af",
+      "node_id": "98481c5a7067",
       "host": "nl-central.v8x2b.lol",
       "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "original_name": "🌐 Anycast-IP | 🇩🇪 | [BL]",
       "country": "US",
-      "tcp_ms": 90.5,
+      "tcp_ms": 126.5,
       "proxy_ms": null,
-      "speed_mbps": 2.11,
-      "live_ms": 629.8,
+      "speed_mbps": 5.95,
+      "live_ms": 608.4,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,81 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 92.74,
+      "score": 94.19,
       "errors": [],
-      "display_name": "🇺🇸 US · #01 · 630ms · 2Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 608ms · 6Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "53a6744c625d",
+      "host": "gr1.originmesh.online",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "country": "DE",
+      "tcp_ms": 136.1,
+      "proxy_ms": null,
+      "speed_mbps": 5.29,
+      "live_ms": 677.8,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 93.12,
+      "errors": [],
+      "display_name": "🇩🇪 DE · #02 · 678ms · 5Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "92ddcd1099bc",
+      "host": "netherlands02.azotvpn.xyz",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "country": "NL",
+      "tcp_ms": 1478.8,
+      "proxy_ms": null,
+      "speed_mbps": 5.52,
+      "live_ms": 684.6,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 93.08,
+      "errors": [],
+      "display_name": "🇳🇱 NL · #03 · 685ms · 6Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "970b150712ed",
+      "host": "finland02.azotvpn.xyz",
+      "port": 8443,
+      "security": "reality",
+      "transport": "grpc",
+      "original_name": "🇫🇮 Finland, Helsinki | [BL]",
+      "country": "FI",
+      "tcp_ms": 267.9,
+      "proxy_ms": null,
+      "speed_mbps": 9.53,
+      "live_ms": 916.5,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 90.68,
+      "errors": [],
+      "display_name": "🇫🇮 FI · #04 · 916ms · 10Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
