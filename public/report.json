@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-23T07:27:03.570843+00:00",
+  "generated_at": "2026-10-23T13:22:06.824440+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -20,82 +20,34 @@
       "accepted": 27
     },
     "igareck_mobile_whitelist": {
-      "fetched": 57,
-      "accepted": 53
+      "fetched": 70,
+      "accepted": 70
     },
     "igareck_cidr_whitelist": {
-      "fetched": 62,
-      "accepted": 57
+      "fetched": 75,
+      "accepted": 75
     },
     "igareck_sni_whitelist": {
-      "fetched": 4,
-      "accepted": 4
+      "fetched": 0,
+      "accepted": 0
     },
     "vsv_mobile_whitelist": {
       "fetched": 20,
-      "accepted": 19
+      "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 114,
-      "accepted": 84
+      "fetched": 7,
+      "accepted": 7
     },
     "aviamasters_ru": {
-      "fetched": 62,
-      "accepted": 57
+      "fetched": 75,
+      "accepted": 75
     }
   },
-  "excluded_ru": 237,
-  "candidates": 59,
-  "published": 5,
+  "excluded_ru": 257,
+  "candidates": 17,
+  "published": 1,
   "nodes": [
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "f89d35b18a5d",
-      "host": "94.249.179.249",
-      "port": 443,
-      "security": "reality",
-      "transport": "grpc",
-      "original_name": "🇩🇪 Germany, Bad Soden am Taunus (Neuenhain) | [BL]",
-      "country": "DE",
-      "tcp_ms": 145.9,
-      "proxy_ms": null,
-      "speed_mbps": 12.72,
-      "live_ms": 771.0,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 93.0,
-      "errors": [],
-      "display_name": "🇩🇪 DE · #01 · 771ms · 13Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "ae0d7705b62d",
-      "host": "jeod.figmafound.org",
-      "port": 443,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇸🇪 Sweden, Stockholm | [BL]",
-      "country": "SE",
-      "tcp_ms": 171.4,
-      "proxy_ms": null,
-      "speed_mbps": 4.39,
-      "live_ms": 804.0,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 91.21,
-      "errors": [],
-      "display_name": "🇸🇪 SE · #02 · 804ms · 4Mbps · Reality · RU-Mobile·Regular"
-    },
     {
       "source": "aetris_mobile_whitelist",
       "node_id": "31962ffb9ca5",
@@ -105,10 +57,10 @@
       "transport": "grpc",
       "original_name": "🇷🇴 AetrisVPN",
       "country": "RO",
-      "tcp_ms": 229.9,
+      "tcp_ms": 116.5,
       "proxy_ms": null,
-      "speed_mbps": 2.45,
-      "live_ms": 1581.5,
+      "speed_mbps": 10.34,
+      "live_ms": 901.5,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -116,57 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 84.2,
+      "score": 94.98,
       "errors": [],
-      "display_name": "🇷🇴 RO · #03 · 1582ms · 2Mbps · Reality · RU-LTE·Aetris"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "59cbf4959400",
-      "host": "43.156.89.197",
-      "port": 61000,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇸🇬 Singapore | 🌐 | [BL]",
-      "country": "SG",
-      "tcp_ms": 170.1,
-      "proxy_ms": null,
-      "speed_mbps": 2.41,
-      "live_ms": 1368.1,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 83.03,
-      "errors": [],
-      "display_name": "🇸🇬 SG · #04 · 1368ms · 2Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "e9314460a914",
-      "host": "8.6.112.0",
-      "port": 443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🌐 Anycast-IP | 🇫🇮 🇬🇧 | [BL]",
-      "country": "US",
-      "tcp_ms": 9.0,
-      "proxy_ms": null,
-      "speed_mbps": 3.8,
-      "live_ms": 1435.2,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 77.63,
-      "errors": [],
-      "display_name": "🇺🇸 US · #05 · 1435ms · 4Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇷🇴 RO · #01 · 902ms · 10Mbps · Reality · RU-LTE·Aetris"
     }
   ]
 }
