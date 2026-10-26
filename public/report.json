@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-26T12:54:15.950970+00:00",
+  "generated_at": "2026-10-26T19:15:56.243116+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,51 +16,51 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 44,
-      "accepted": 41
+      "fetched": 49,
+      "accepted": 44
     },
     "igareck_mobile_whitelist": {
-      "fetched": 84,
-      "accepted": 84
+      "fetched": 112,
+      "accepted": 111
     },
     "igareck_cidr_whitelist": {
-      "fetched": 112,
-      "accepted": 112
+      "fetched": 143,
+      "accepted": 142
     },
     "igareck_sni_whitelist": {
-      "fetched": 4,
-      "accepted": 4
+      "fetched": 0,
+      "accepted": 0
     },
     "vsv_mobile_whitelist": {
       "fetched": 20,
       "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 112,
-      "accepted": 84
+      "fetched": 113,
+      "accepted": 85
     },
     "aviamasters_ru": {
-      "fetched": 112,
-      "accepted": 112
+      "fetched": 143,
+      "accepted": 142
     }
   },
-  "excluded_ru": 400,
-  "candidates": 55,
+  "excluded_ru": 496,
+  "candidates": 48,
   "published": 2,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "9594420b766e",
-      "host": "4.hfrryuu.ir",
-      "port": 8129,
+      "node_id": "46c33f77253d",
+      "host": "ge-s-1.pythonmakemigreat.wiki",
+      "port": 443,
       "security": "reality",
       "transport": "tcp",
-      "original_name": "🇮🇹 Italy, Pratantico-Indicatore | 🌐 | [BL]",
-      "country": "IT",
-      "tcp_ms": 153.9,
+      "original_name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
+      "country": "DE",
+      "tcp_ms": 157.6,
       "proxy_ms": null,
-      "speed_mbps": 4.88,
-      "live_ms": 794.7,
+      "speed_mbps": 5.97,
+      "live_ms": 581.9,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,23 +68,23 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 91.46,
+      "score": 94.54,
       "errors": [],
-      "display_name": "🇮🇹 IT · #01 · 795ms · 5Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇩🇪 DE · #01 · 582ms · 6Mbps · Reality · RU-Mobile·Regular"
     },
     {
       "source": "igareck_mobile_regular",
-      "node_id": "ff0442feba81",
-      "host": "adheres-scruple.quick-cdn.net",
+      "node_id": "2ae8a036855a",
+      "host": "lists.soloramtin.cyou",
       "port": 443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇺🇸 United States | 🌐 | [BL]",
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇺🇸 United States, Knoxville (Cedar Bluff) | [BL]",
       "country": "US",
-      "tcp_ms": 6.3,
+      "tcp_ms": 293.4,
       "proxy_ms": null,
-      "speed_mbps": 4.01,
-      "live_ms": 628.1,
+      "speed_mbps": 2.5,
+      "live_ms": 1815.7,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -92,9 +92,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 88.45,
+      "score": 77.1,
       "errors": [],
-      "display_name": "🇺🇸 US · #02 · 628ms · 4Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #02 · 1816ms · 2Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
