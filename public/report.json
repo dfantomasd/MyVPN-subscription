@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-27T07:47:40.056962+00:00",
+  "generated_at": "2026-10-27T14:26:13.311370+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,16 +16,16 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 36,
-      "accepted": 32
+      "fetched": 29,
+      "accepted": 27
     },
     "igareck_mobile_whitelist": {
-      "fetched": 66,
-      "accepted": 66
+      "fetched": 34,
+      "accepted": 22
     },
     "igareck_cidr_whitelist": {
-      "fetched": 115,
-      "accepted": 111
+      "fetched": 93,
+      "accepted": 78
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
@@ -36,79 +36,31 @@
       "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 109,
-      "accepted": 84
+      "fetched": 56,
+      "accepted": 42
     },
     "aviamasters_ru": {
-      "fetched": 115,
-      "accepted": 115
+      "fetched": 94,
+      "accepted": 85
     }
   },
-  "excluded_ru": 330,
-  "candidates": 94,
-  "published": 4,
+  "excluded_ru": 234,
+  "candidates": 40,
+  "published": 1,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "9bd05e9ff798",
-      "host": "ge-s-1.pythonmakemigreat.wiki",
-      "port": 443,
-      "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇩🇪 Germany, Frankfurt am Main | [BL]",
-      "country": "DE",
-      "tcp_ms": 150.2,
-      "proxy_ms": null,
-      "speed_mbps": 6.38,
-      "live_ms": 549.9,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 95.05,
-      "errors": [],
-      "display_name": "🇩🇪 DE · #01 · 550ms · 6Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "2a6c5b83d4bc",
-      "host": "122.8.45.6",
-      "port": 8443,
-      "security": "reality",
-      "transport": "grpc",
-      "original_name": "🇬🇧 United Kingdom, London | [BL]",
-      "country": "CN",
-      "tcp_ms": 129.3,
-      "proxy_ms": null,
-      "speed_mbps": 9.46,
-      "live_ms": 803.5,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 92.17,
-      "errors": [],
-      "display_name": "🇨🇳 CN · #02 · 804ms · 9Mbps · Reality · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "caf7b2dbcae9",
-      "host": "198.202.24.142",
+      "node_id": "937f3e6cc8b1",
+      "host": "209.94.90.201",
       "port": 2083,
       "security": "tls",
       "transport": "ws",
       "original_name": "🇫🇮 Finland, Helsinki | 🌐 | [BL]",
       "country": "US",
-      "tcp_ms": 7.5,
+      "tcp_ms": 2.8,
       "proxy_ms": null,
-      "speed_mbps": 4.11,
-      "live_ms": 1149.7,
+      "speed_mbps": 3.27,
+      "live_ms": 1045.5,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -116,33 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 81.52,
+      "score": 82.65,
       "errors": [],
-      "display_name": "🇺🇸 US · #03 · 1150ms · 4Mbps · TLS · RU-Mobile·Regular"
-    },
-    {
-      "source": "igareck_mobile_regular",
-      "node_id": "d184dd61ffb7",
-      "host": "45.133.73.116",
-      "port": 443,
-      "security": "tls",
-      "transport": "tcp",
-      "original_name": "🇭🇰 Hong Kong, Hong Kong | [BL]",
-      "country": "HK",
-      "tcp_ms": 189.0,
-      "proxy_ms": null,
-      "speed_mbps": 2.63,
-      "live_ms": 1494.6,
-      "telegram_verified": true,
-      "services_verified": [
-        "Telegram",
-        "Instagram",
-        "WhatsApp",
-        "OpenAI"
-      ],
-      "score": 76.43,
-      "errors": [],
-      "display_name": "🇭🇰 HK · #04 · 1495ms · 3Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇺🇸 US · #01 · 1046ms · 3Mbps · TLS · RU-Mobile·Regular"
     }
   ]
 }
