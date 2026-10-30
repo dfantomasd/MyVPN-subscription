@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-29T21:48:02.588202+00:00",
+  "generated_at": "2026-10-30T01:57:15.761597+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,51 +16,51 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 46,
-      "accepted": 44
+      "fetched": 16,
+      "accepted": 15
     },
     "igareck_mobile_whitelist": {
-      "fetched": 73,
-      "accepted": 73
+      "fetched": 51,
+      "accepted": 51
     },
     "igareck_cidr_whitelist": {
-      "fetched": 93,
-      "accepted": 93
+      "fetched": 69,
+      "accepted": 63
     },
     "igareck_sni_whitelist": {
-      "fetched": 0,
-      "accepted": 0
+      "fetched": 6,
+      "accepted": 6
     },
     "vsv_mobile_whitelist": {
-      "fetched": 19,
-      "accepted": 19
+      "fetched": 20,
+      "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 69,
-      "accepted": 62
+      "fetched": 87,
+      "accepted": 80
     },
     "aviamasters_ru": {
-      "fetched": 93,
-      "accepted": 93
+      "fetched": 69,
+      "accepted": 63
     }
   },
-  "excluded_ru": 309,
-  "candidates": 75,
-  "published": 1,
+  "excluded_ru": 195,
+  "candidates": 95,
+  "published": 7,
   "nodes": [
     {
-      "source": "igareck_mobile_regular",
-      "node_id": "c6e5e5f3dc50",
-      "host": "sw.golangwikito.cfd",
-      "port": 443,
+      "source": "igareck_sni_whitelist",
+      "node_id": "a4d5189ae76b",
+      "host": "83.147.232.69",
+      "port": 10459,
       "security": "reality",
-      "transport": "tcp",
-      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
-      "country": "NL",
-      "tcp_ms": 103.9,
+      "transport": "grpc",
+      "original_name": "🇵🇱 Poland | [SNI-RU] ya.ru",
+      "country": "PL",
+      "tcp_ms": 120.6,
       "proxy_ms": null,
-      "speed_mbps": 10.26,
-      "live_ms": 418.0,
+      "speed_mbps": 20.89,
+      "live_ms": 587.3,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,153 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 97.42,
+      "score": 98.62,
       "errors": [],
-      "display_name": "🇳🇱 NL · #01 · 418ms · 10Mbps · Reality · RU-Mobile·Regular"
+      "display_name": "🇵🇱 PL · #01 · 587ms · 21Mbps · Reality · RU-LTE·SNI"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "e087e1e1b2a7",
+      "host": "sw.golangwikito.cfd",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "country": "NL",
+      "tcp_ms": 123.6,
+      "proxy_ms": null,
+      "speed_mbps": 7.09,
+      "live_ms": 547.3,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 95.22,
+      "errors": [],
+      "display_name": "🇳🇱 NL · #02 · 547ms · 7Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "210beb4f2905",
+      "host": "31.172.69.31",
+      "port": 8443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇺🇸 United States, Dallas | [BL]",
+      "country": "US",
+      "tcp_ms": 19.1,
+      "proxy_ms": null,
+      "speed_mbps": 6.25,
+      "live_ms": 613.2,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 94.18,
+      "errors": [],
+      "display_name": "🇺🇸 US · #03 · 613ms · 6Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "b14a9f677e7c",
+      "host": "104.194.148.125",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇩🇪 Germany, Berlin | [BL]",
+      "country": "GB",
+      "tcp_ms": 120.0,
+      "proxy_ms": null,
+      "speed_mbps": 7.01,
+      "live_ms": 755.1,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 92.43,
+      "errors": [],
+      "display_name": "🇬🇧 GB · #04 · 755ms · 7Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "a1565649f079",
+      "host": "31.172.65.4",
+      "port": 8443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇸🇪 Sweden, Falkenberg (Skogstorp-Västra Gärdet-Arvidstorp) | [BL]",
+      "country": "SE",
+      "tcp_ms": 135.3,
+      "proxy_ms": null,
+      "speed_mbps": 5.86,
+      "live_ms": 887.6,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 90.44,
+      "errors": [],
+      "display_name": "🇸🇪 SE · #05 · 888ms · 6Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "5ce123427182",
+      "host": "8.6.112.0",
+      "port": 2087,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇵🇱 Poland, Warsaw | [BL]",
+      "country": "US",
+      "tcp_ms": 18.1,
+      "proxy_ms": null,
+      "speed_mbps": 4.42,
+      "live_ms": 1204.6,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 80.88,
+      "errors": [],
+      "display_name": "🇺🇸 US · #06 · 1205ms · 4Mbps · TLS · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "1e2f06e27e6d",
+      "host": "526.150333.xyz",
+      "port": 21002,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇭🇰 Hong Kong, Mong Kok | [BL]",
+      "country": "HK",
+      "tcp_ms": 177.0,
+      "proxy_ms": null,
+      "speed_mbps": 2.96,
+      "live_ms": 5030.5,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 61.49,
+      "errors": [],
+      "display_name": "🇭🇰 HK · #07 · 5030ms · 3Mbps · Reality · RU-Mobile·Regular"
     }
   ]
 }
