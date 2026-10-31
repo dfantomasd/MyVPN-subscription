@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-31T13:38:10.225807+00:00",
+  "generated_at": "2026-10-31T18:31:03.804359+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,51 +16,51 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 90,
-      "accepted": 88
+      "fetched": 79,
+      "accepted": 78
     },
     "igareck_mobile_whitelist": {
-      "fetched": 54,
-      "accepted": 48
+      "fetched": 79,
+      "accepted": 79
     },
     "igareck_cidr_whitelist": {
-      "fetched": 100,
-      "accepted": 85
+      "fetched": 123,
+      "accepted": 121
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
       "accepted": 0
     },
     "vsv_mobile_whitelist": {
-      "fetched": 20,
-      "accepted": 20
+      "fetched": 17,
+      "accepted": 17
     },
     "igareck_mobile_regular": {
-      "fetched": 98,
-      "accepted": 72
-    },
-    "aviamasters_ru": {
       "fetched": 100,
       "accepted": 85
+    },
+    "aviamasters_ru": {
+      "fetched": 84,
+      "accepted": 79
     }
   },
-  "excluded_ru": 317,
-  "candidates": 81,
+  "excluded_ru": 394,
+  "candidates": 65,
   "published": 1,
   "nodes": [
     {
-      "source": "igareck_mobile_regular",
-      "node_id": "80a642ad65a3",
-      "host": "195.141.65.98",
+      "source": "aetris_mobile_whitelist",
+      "node_id": "14a3b1a01c26",
+      "host": "94.228.162.222",
       "port": 443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇩🇪 Germany, Frankfurt am Main | 🌐 | [BL]",
-      "country": "CH",
-      "tcp_ms": 121.7,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇦🇹 AetrisVPN",
+      "country": "AT",
+      "tcp_ms": 95.4,
       "proxy_ms": null,
-      "speed_mbps": 4.64,
-      "live_ms": 4685.9,
+      "speed_mbps": 6.64,
+      "live_ms": 904.3,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 57.0,
+      "score": 94.38,
       "errors": [],
-      "display_name": "🇨🇭 CH · #01 · 4686ms · 5Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇦🇹 AT · #01 · 904ms · 7Mbps · Reality · RU-LTE·Aetris"
     }
   ]
 }
