@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-08T14:19:18.608278+00:00",
+  "generated_at": "2026-11-08T19:39:58.752964+00:00",
   "policy": {
     "excluded_countries": [
       "RU"
@@ -16,16 +16,16 @@
   },
   "sources": {
     "aetris_mobile_whitelist": {
-      "fetched": 40,
-      "accepted": 34
+      "fetched": 34,
+      "accepted": 29
     },
     "igareck_mobile_whitelist": {
-      "fetched": 21,
-      "accepted": 20
+      "fetched": 119,
+      "accepted": 118
     },
     "igareck_cidr_whitelist": {
-      "fetched": 21,
-      "accepted": 20
+      "fetched": 121,
+      "accepted": 120
     },
     "igareck_sni_whitelist": {
       "fetched": 0,
@@ -33,34 +33,34 @@
     },
     "vsv_mobile_whitelist": {
       "fetched": 20,
-      "accepted": 19
+      "accepted": 20
     },
     "igareck_mobile_regular": {
-      "fetched": 106,
-      "accepted": 106
+      "fetched": 100,
+      "accepted": 100
     },
     "aviamasters_ru": {
-      "fetched": 104,
-      "accepted": 100
+      "fetched": 121,
+      "accepted": 120
     }
   },
-  "excluded_ru": 183,
-  "candidates": 116,
-  "published": 2,
+  "excluded_ru": 399,
+  "candidates": 106,
+  "published": 7,
   "nodes": [
     {
       "source": "igareck_mobile_regular",
-      "node_id": "7590dd8bcd80",
-      "host": "whitepanel-ui-production-84c0.up.railway.app",
+      "node_id": "d4bb5d088350",
+      "host": "31.56.186.24",
       "port": 443,
-      "security": "tls",
-      "transport": "ws",
-      "original_name": "🇺🇸 United States, San Jose | [BL]",
-      "country": "SG",
-      "tcp_ms": 70.0,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "country": "NL",
+      "tcp_ms": 111.8,
       "proxy_ms": null,
-      "speed_mbps": 4.86,
-      "live_ms": 846.0,
+      "speed_mbps": 7.84,
+      "live_ms": 514.5,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -68,9 +68,129 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 85.77,
+      "score": 95.78,
       "errors": [],
-      "display_name": "🇸🇬 SG · #01 · 846ms · 5Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇳🇱 NL · #01 · 514ms · 8Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "5a94db336c9d",
+      "host": "fr.golangwikito.cfd",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇳🇱 The Netherlands, Amsterdam | [BL]",
+      "country": "NL",
+      "tcp_ms": 145.9,
+      "proxy_ms": null,
+      "speed_mbps": 7.58,
+      "live_ms": 516.2,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 95.72,
+      "errors": [],
+      "display_name": "🇳🇱 NL · #02 · 516ms · 8Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "90f48cea512c",
+      "host": "537df6t.ch5.h1clayd.click",
+      "port": 443,
+      "security": "reality",
+      "transport": "tcp",
+      "original_name": "🇨🇭 Switzerland, Zurich | [BL]",
+      "country": "CH",
+      "tcp_ms": 169.0,
+      "proxy_ms": null,
+      "speed_mbps": 2.85,
+      "live_ms": 711.4,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 91.96,
+      "errors": [],
+      "display_name": "🇨🇭 CH · #03 · 711ms · 3Mbps · Reality · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "3bc987bce863",
+      "host": "germany3.banovano.space",
+      "port": 2053,
+      "security": "tls",
+      "transport": "grpc",
+      "original_name": "🇱🇹 Lithuania, Vilnius | [BL]",
+      "country": "LT",
+      "tcp_ms": 142.1,
+      "proxy_ms": null,
+      "speed_mbps": 12.05,
+      "live_ms": 730.6,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 88.46,
+      "errors": [],
+      "display_name": "🇱🇹 LT · #04 · 731ms · 12Mbps · TLS · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "09d85e2e16f1",
+      "host": "jp01.cf.sh-cloudflare.sbs",
+      "port": 2096,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇯🇵 Japan | 🌐 | [BL]",
+      "country": "CA",
+      "tcp_ms": 71.0,
+      "proxy_ms": null,
+      "speed_mbps": 1.84,
+      "live_ms": 2087.8,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 68.17,
+      "errors": [],
+      "display_name": "🇨🇦 CA · #05 · 2088ms · 2Mbps · TLS · RU-Mobile·Regular"
+    },
+    {
+      "source": "igareck_mobile_regular",
+      "node_id": "a82d02237b2f",
+      "host": "172.64.229.88",
+      "port": 8443,
+      "security": "tls",
+      "transport": "ws",
+      "original_name": "🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]",
+      "country": "CA",
+      "tcp_ms": 6.2,
+      "proxy_ms": null,
+      "speed_mbps": 1.36,
+      "live_ms": 2190.8,
+      "telegram_verified": true,
+      "services_verified": [
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "OpenAI"
+      ],
+      "score": 66.53,
+      "errors": [],
+      "display_name": "🇨🇦 CA · #06 · 2191ms · 1Mbps · TLS · RU-Mobile·Regular"
     },
     {
       "source": "igareck_mobile_regular",
@@ -81,10 +201,10 @@
       "transport": "ws",
       "original_name": "🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]",
       "country": "CA",
-      "tcp_ms": 31.3,
+      "tcp_ms": 66.0,
       "proxy_ms": null,
-      "speed_mbps": 2.59,
-      "live_ms": 2175.1,
+      "speed_mbps": 1.38,
+      "live_ms": 2357.0,
       "telegram_verified": true,
       "services_verified": [
         "Telegram",
@@ -92,9 +212,9 @@
         "WhatsApp",
         "OpenAI"
       ],
-      "score": 67.34,
+      "score": 64.32,
       "errors": [],
-      "display_name": "🇨🇦 CA · #02 · 2175ms · 3Mbps · TLS · RU-Mobile·Regular"
+      "display_name": "🇨🇦 CA · #07 · 2357ms · 1Mbps · TLS · RU-Mobile·Regular"
     }
   ]
 }
